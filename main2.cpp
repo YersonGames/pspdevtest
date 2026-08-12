@@ -19,7 +19,7 @@ int main(void)
         BeginDrawing();
         ClearBackground(BLACK);
         DrawText("Hola",0,0,16,WHITE);
-        DrawRectangle(32,32,64,64,RED);
+        DrawRectangle(32,32,64,64,LIME);
         EndDrawing();
     }
 
