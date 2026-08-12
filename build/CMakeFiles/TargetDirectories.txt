@@ -1,3 +1,0 @@
-/home/yerson/projects/pspcpptest/build/CMakeFiles/hello.dir
-/home/yerson/projects/pspcpptest/build/CMakeFiles/edit_cache.dir
-/home/yerson/projects/pspcpptest/build/CMakeFiles/rebuild_cache.dir
