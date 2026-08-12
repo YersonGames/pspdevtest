@@ -17,9 +17,9 @@ int main(void)
     while (!WindowShouldClose())
     {
         BeginDrawing();
-        ClearBackground(BLACK);
-        DrawText("Hola",0,0,16,WHITE);
-        DrawRectangle(32,32,64,64,LIME);
+            ClearBackground(BLACK);
+            DrawText("Hola",0,0,16,WHITE);
+            DrawRectangle(32,32,64,64,LIME);
         EndDrawing();
     }
 
