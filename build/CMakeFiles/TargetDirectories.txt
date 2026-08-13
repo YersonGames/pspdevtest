@@ -1,3 +1,0 @@
-/home/yerson/repos/pspdevtest/build/CMakeFiles/pspGameTest.dir
-/home/yerson/repos/pspdevtest/build/CMakeFiles/edit_cache.dir
-/home/yerson/repos/pspdevtest/build/CMakeFiles/rebuild_cache.dir
