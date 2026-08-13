@@ -1,0 +1,1920 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/home/yerson/.local/bin/"
+      - "/home/yerson/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/home/yerson/pspdev/bin/"
+    searched_directories:
+      - "/home/yerson/.local/bin/uname"
+      - "/home/yerson/bin/uname"
+      - "/usr/local/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:207 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The target system is: Generic - 1 - mips
+      The host system is: Linux - 7.1.8-200.fc44.x86_64 - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/home/yerson/.local/bin/"
+      - "/home/yerson/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/pspdev/sbin/"
+      - "/home/yerson/pspdev/"
+      - "/home/yerson/pspdev/psp/bin/"
+      - "/home/yerson/pspdev/psp/sbin/"
+      - "/home/yerson/pspdev/psp/"
+      - "/home/yerson/pspdev/psp/sdk/bin/"
+      - "/home/yerson/pspdev/psp/sdk/sbin/"
+      - "/home/yerson/pspdev/psp/sdk/"
+    searched_directories:
+      - "/home/yerson/.local/bin/gmake"
+      - "/home/yerson/bin/gmake"
+      - "/usr/local/bin/gmake"
+    found: "/usr/bin/gmake"
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+    found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/yerson/pspdev/bin/psp-gcc 
+      Build flags: -I/home/yerson/pspdev/psp/include;-I/home/yerson/pspdev/psp/sdk/include;-DPSP
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/yerson/repos/pspdevtest/build/CMakeFiles/4.3.0/CompilerIdC/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "psp-ar"
+      - "ar"
+    candidate_directories:
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/.local/bin/"
+      - "/home/yerson/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/pspdev/sbin/"
+      - "/home/yerson/pspdev/"
+      - "/home/yerson/pspdev/psp/bin/"
+      - "/home/yerson/pspdev/psp/sbin/"
+      - "/home/yerson/pspdev/psp/"
+      - "/home/yerson/pspdev/psp/sdk/bin/"
+      - "/home/yerson/pspdev/psp/sdk/sbin/"
+      - "/home/yerson/pspdev/psp/sdk/"
+    found: "/home/yerson/pspdev/bin/psp-ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "psp-ranlib"
+      - "ranlib"
+    candidate_directories:
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/.local/bin/"
+      - "/home/yerson/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/pspdev/sbin/"
+      - "/home/yerson/pspdev/"
+      - "/home/yerson/pspdev/psp/bin/"
+      - "/home/yerson/pspdev/psp/sbin/"
+      - "/home/yerson/pspdev/psp/"
+      - "/home/yerson/pspdev/psp/sdk/bin/"
+      - "/home/yerson/pspdev/psp/sdk/sbin/"
+      - "/home/yerson/pspdev/psp/sdk/"
+    found: "/home/yerson/pspdev/bin/psp-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "psp-strip"
+      - "strip"
+    candidate_directories:
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/.local/bin/"
+      - "/home/yerson/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/pspdev/sbin/"
+      - "/home/yerson/pspdev/"
+      - "/home/yerson/pspdev/psp/bin/"
+      - "/home/yerson/pspdev/psp/sbin/"
+      - "/home/yerson/pspdev/psp/"
+      - "/home/yerson/pspdev/psp/sdk/bin/"
+      - "/home/yerson/pspdev/psp/sdk/sbin/"
+      - "/home/yerson/pspdev/psp/sdk/"
+    found: "/home/yerson/pspdev/bin/psp-strip"
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "psp-ld"
+      - "ld"
+    candidate_directories:
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/.local/bin/"
+      - "/home/yerson/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/pspdev/sbin/"
+      - "/home/yerson/pspdev/"
+      - "/home/yerson/pspdev/psp/bin/"
+      - "/home/yerson/pspdev/psp/sbin/"
+      - "/home/yerson/pspdev/psp/"
+      - "/home/yerson/pspdev/psp/sdk/bin/"
+      - "/home/yerson/pspdev/psp/sdk/sbin/"
+      - "/home/yerson/pspdev/psp/sdk/"
+    found: "/home/yerson/pspdev/bin/psp-ld"
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "psp-nm"
+      - "nm"
+    candidate_directories:
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/.local/bin/"
+      - "/home/yerson/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/pspdev/sbin/"
+      - "/home/yerson/pspdev/"
+      - "/home/yerson/pspdev/psp/bin/"
+      - "/home/yerson/pspdev/psp/sbin/"
+      - "/home/yerson/pspdev/psp/"
+      - "/home/yerson/pspdev/psp/sdk/bin/"
+      - "/home/yerson/pspdev/psp/sdk/sbin/"
+      - "/home/yerson/pspdev/psp/sdk/"
+    found: "/home/yerson/pspdev/bin/psp-nm"
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "psp-objdump"
+      - "objdump"
+    candidate_directories:
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/.local/bin/"
+      - "/home/yerson/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/pspdev/sbin/"
+      - "/home/yerson/pspdev/"
+      - "/home/yerson/pspdev/psp/bin/"
+      - "/home/yerson/pspdev/psp/sbin/"
+      - "/home/yerson/pspdev/psp/"
+      - "/home/yerson/pspdev/psp/sdk/bin/"
+      - "/home/yerson/pspdev/psp/sdk/sbin/"
+      - "/home/yerson/pspdev/psp/sdk/"
+    found: "/home/yerson/pspdev/bin/psp-objdump"
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "psp-objcopy"
+      - "objcopy"
+    candidate_directories:
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/.local/bin/"
+      - "/home/yerson/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/pspdev/sbin/"
+      - "/home/yerson/pspdev/"
+      - "/home/yerson/pspdev/psp/bin/"
+      - "/home/yerson/pspdev/psp/sbin/"
+      - "/home/yerson/pspdev/psp/"
+      - "/home/yerson/pspdev/psp/sdk/bin/"
+      - "/home/yerson/pspdev/psp/sdk/sbin/"
+      - "/home/yerson/pspdev/psp/sdk/"
+    found: "/home/yerson/pspdev/bin/psp-objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "psp-readelf"
+      - "readelf"
+    candidate_directories:
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/.local/bin/"
+      - "/home/yerson/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/pspdev/sbin/"
+      - "/home/yerson/pspdev/"
+      - "/home/yerson/pspdev/psp/bin/"
+      - "/home/yerson/pspdev/psp/sbin/"
+      - "/home/yerson/pspdev/psp/"
+      - "/home/yerson/pspdev/psp/sdk/bin/"
+      - "/home/yerson/pspdev/psp/sdk/sbin/"
+      - "/home/yerson/pspdev/psp/sdk/"
+    found: "/home/yerson/pspdev/bin/psp-readelf"
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "psp-dlltool"
+      - "dlltool"
+    candidate_directories:
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/.local/bin/"
+      - "/home/yerson/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/pspdev/sbin/"
+      - "/home/yerson/pspdev/"
+      - "/home/yerson/pspdev/psp/bin/"
+      - "/home/yerson/pspdev/psp/sbin/"
+      - "/home/yerson/pspdev/psp/"
+      - "/home/yerson/pspdev/psp/sdk/bin/"
+      - "/home/yerson/pspdev/psp/sdk/sbin/"
+      - "/home/yerson/pspdev/psp/sdk/"
+    searched_directories:
+      - "/home/yerson/pspdev/bin/psp-dlltool"
+      - "/home/yerson/.local/bin/psp-dlltool"
+      - "/home/yerson/bin/psp-dlltool"
+      - "/usr/local/bin/psp-dlltool"
+      - "/usr/bin/psp-dlltool"
+      - "/bin/psp-dlltool"
+      - "/home/yerson/pspdev/bin/psp-dlltool"
+      - "/home/yerson/pspdev/sbin/psp-dlltool"
+      - "/home/yerson/pspdev/psp-dlltool"
+      - "/home/yerson/pspdev/psp/bin/psp-dlltool"
+      - "/home/yerson/pspdev/psp/sbin/psp-dlltool"
+      - "/home/yerson/pspdev/psp/psp-dlltool"
+      - "/home/yerson/pspdev/psp/sdk/bin/psp-dlltool"
+      - "/home/yerson/pspdev/psp/sdk/sbin/psp-dlltool"
+      - "/home/yerson/pspdev/psp/sdk/psp-dlltool"
+      - "/home/yerson/pspdev/bin/dlltool"
+      - "/home/yerson/.local/bin/dlltool"
+      - "/home/yerson/bin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/usr/bin/dlltool"
+      - "/bin/dlltool"
+      - "/home/yerson/pspdev/bin/dlltool"
+      - "/home/yerson/pspdev/sbin/dlltool"
+      - "/home/yerson/pspdev/dlltool"
+      - "/home/yerson/pspdev/psp/bin/dlltool"
+      - "/home/yerson/pspdev/psp/sbin/dlltool"
+      - "/home/yerson/pspdev/psp/dlltool"
+      - "/home/yerson/pspdev/psp/sdk/bin/dlltool"
+      - "/home/yerson/pspdev/psp/sdk/sbin/dlltool"
+      - "/home/yerson/pspdev/psp/sdk/dlltool"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "psp-addr2line"
+      - "addr2line"
+    candidate_directories:
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/.local/bin/"
+      - "/home/yerson/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/pspdev/sbin/"
+      - "/home/yerson/pspdev/"
+      - "/home/yerson/pspdev/psp/bin/"
+      - "/home/yerson/pspdev/psp/sbin/"
+      - "/home/yerson/pspdev/psp/"
+      - "/home/yerson/pspdev/psp/sdk/bin/"
+      - "/home/yerson/pspdev/psp/sdk/sbin/"
+      - "/home/yerson/pspdev/psp/sdk/"
+    found: "/home/yerson/pspdev/bin/psp-addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "psp-tapi"
+      - "tapi"
+    candidate_directories:
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/.local/bin/"
+      - "/home/yerson/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/pspdev/sbin/"
+      - "/home/yerson/pspdev/"
+      - "/home/yerson/pspdev/psp/bin/"
+      - "/home/yerson/pspdev/psp/sbin/"
+      - "/home/yerson/pspdev/psp/"
+      - "/home/yerson/pspdev/psp/sdk/bin/"
+      - "/home/yerson/pspdev/psp/sdk/sbin/"
+      - "/home/yerson/pspdev/psp/sdk/"
+    searched_directories:
+      - "/home/yerson/pspdev/bin/psp-tapi"
+      - "/home/yerson/.local/bin/psp-tapi"
+      - "/home/yerson/bin/psp-tapi"
+      - "/usr/local/bin/psp-tapi"
+      - "/usr/bin/psp-tapi"
+      - "/bin/psp-tapi"
+      - "/home/yerson/pspdev/bin/psp-tapi"
+      - "/home/yerson/pspdev/sbin/psp-tapi"
+      - "/home/yerson/pspdev/psp-tapi"
+      - "/home/yerson/pspdev/psp/bin/psp-tapi"
+      - "/home/yerson/pspdev/psp/sbin/psp-tapi"
+      - "/home/yerson/pspdev/psp/psp-tapi"
+      - "/home/yerson/pspdev/psp/sdk/bin/psp-tapi"
+      - "/home/yerson/pspdev/psp/sdk/sbin/psp-tapi"
+      - "/home/yerson/pspdev/psp/sdk/psp-tapi"
+      - "/home/yerson/pspdev/bin/tapi"
+      - "/home/yerson/.local/bin/tapi"
+      - "/home/yerson/bin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/usr/bin/tapi"
+      - "/bin/tapi"
+      - "/home/yerson/pspdev/bin/tapi"
+      - "/home/yerson/pspdev/sbin/tapi"
+      - "/home/yerson/pspdev/tapi"
+      - "/home/yerson/pspdev/psp/bin/tapi"
+      - "/home/yerson/pspdev/psp/sbin/tapi"
+      - "/home/yerson/pspdev/psp/tapi"
+      - "/home/yerson/pspdev/psp/sdk/bin/tapi"
+      - "/home/yerson/pspdev/psp/sdk/sbin/tapi"
+      - "/home/yerson/pspdev/psp/sdk/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "psp-gcc-ar-15.2"
+      - "psp-gcc-ar-15"
+      - "psp-gcc-ar15"
+      - "psp-gcc-ar"
+    candidate_directories:
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/.local/bin/"
+      - "/home/yerson/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/pspdev/sbin/"
+      - "/home/yerson/pspdev/"
+      - "/home/yerson/pspdev/psp/bin/"
+      - "/home/yerson/pspdev/psp/sbin/"
+      - "/home/yerson/pspdev/psp/"
+      - "/home/yerson/pspdev/psp/sdk/bin/"
+      - "/home/yerson/pspdev/psp/sdk/sbin/"
+      - "/home/yerson/pspdev/psp/sdk/"
+    searched_directories:
+      - "/home/yerson/pspdev/bin/psp-gcc-ar-15.2"
+      - "/home/yerson/.local/bin/psp-gcc-ar-15.2"
+      - "/home/yerson/bin/psp-gcc-ar-15.2"
+      - "/usr/local/bin/psp-gcc-ar-15.2"
+      - "/usr/bin/psp-gcc-ar-15.2"
+      - "/bin/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/bin/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/sbin/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/psp/bin/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/psp/sbin/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/psp/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/psp/sdk/bin/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/psp/sdk/sbin/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/psp/sdk/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/bin/psp-gcc-ar-15"
+      - "/home/yerson/.local/bin/psp-gcc-ar-15"
+      - "/home/yerson/bin/psp-gcc-ar-15"
+      - "/usr/local/bin/psp-gcc-ar-15"
+      - "/usr/bin/psp-gcc-ar-15"
+      - "/bin/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/bin/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/sbin/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/psp/bin/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/psp/sbin/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/psp/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/psp/sdk/bin/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/psp/sdk/sbin/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/psp/sdk/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/bin/psp-gcc-ar15"
+      - "/home/yerson/.local/bin/psp-gcc-ar15"
+      - "/home/yerson/bin/psp-gcc-ar15"
+      - "/usr/local/bin/psp-gcc-ar15"
+      - "/usr/bin/psp-gcc-ar15"
+      - "/bin/psp-gcc-ar15"
+      - "/home/yerson/pspdev/bin/psp-gcc-ar15"
+      - "/home/yerson/pspdev/sbin/psp-gcc-ar15"
+      - "/home/yerson/pspdev/psp-gcc-ar15"
+      - "/home/yerson/pspdev/psp/bin/psp-gcc-ar15"
+      - "/home/yerson/pspdev/psp/sbin/psp-gcc-ar15"
+      - "/home/yerson/pspdev/psp/psp-gcc-ar15"
+      - "/home/yerson/pspdev/psp/sdk/bin/psp-gcc-ar15"
+      - "/home/yerson/pspdev/psp/sdk/sbin/psp-gcc-ar15"
+      - "/home/yerson/pspdev/psp/sdk/psp-gcc-ar15"
+    found: "/home/yerson/pspdev/bin/psp-gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "psp-gcc-ranlib-15.2"
+      - "psp-gcc-ranlib-15"
+      - "psp-gcc-ranlib15"
+      - "psp-gcc-ranlib"
+    candidate_directories:
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/.local/bin/"
+      - "/home/yerson/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/pspdev/sbin/"
+      - "/home/yerson/pspdev/"
+      - "/home/yerson/pspdev/psp/bin/"
+      - "/home/yerson/pspdev/psp/sbin/"
+      - "/home/yerson/pspdev/psp/"
+      - "/home/yerson/pspdev/psp/sdk/bin/"
+      - "/home/yerson/pspdev/psp/sdk/sbin/"
+      - "/home/yerson/pspdev/psp/sdk/"
+    searched_directories:
+      - "/home/yerson/pspdev/bin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/.local/bin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/bin/psp-gcc-ranlib-15.2"
+      - "/usr/local/bin/psp-gcc-ranlib-15.2"
+      - "/usr/bin/psp-gcc-ranlib-15.2"
+      - "/bin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/bin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/sbin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/psp/bin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/psp/sbin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/psp/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/psp/sdk/bin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/psp/sdk/sbin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/psp/sdk/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/bin/psp-gcc-ranlib-15"
+      - "/home/yerson/.local/bin/psp-gcc-ranlib-15"
+      - "/home/yerson/bin/psp-gcc-ranlib-15"
+      - "/usr/local/bin/psp-gcc-ranlib-15"
+      - "/usr/bin/psp-gcc-ranlib-15"
+      - "/bin/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/bin/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/sbin/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/psp/bin/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/psp/sbin/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/psp/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/psp/sdk/bin/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/psp/sdk/sbin/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/psp/sdk/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/bin/psp-gcc-ranlib15"
+      - "/home/yerson/.local/bin/psp-gcc-ranlib15"
+      - "/home/yerson/bin/psp-gcc-ranlib15"
+      - "/usr/local/bin/psp-gcc-ranlib15"
+      - "/usr/bin/psp-gcc-ranlib15"
+      - "/bin/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/bin/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/sbin/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/psp/bin/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/psp/sbin/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/psp/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/psp/sdk/bin/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/psp/sdk/sbin/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/psp/sdk/psp-gcc-ranlib15"
+    found: "/home/yerson/pspdev/bin/psp-gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+    found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/yerson/pspdev/bin/psp-g++ 
+      Build flags: -I/home/yerson/pspdev/psp/include;-I/home/yerson/pspdev/psp/sdk/include;-DPSP
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/yerson/repos/pspdevtest/build/CMakeFiles/4.3.0/CompilerIdCXX/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "psp-gcc-ar-15.2"
+      - "psp-gcc-ar-15"
+      - "psp-gcc-ar15"
+      - "psp-gcc-ar"
+    candidate_directories:
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/.local/bin/"
+      - "/home/yerson/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/pspdev/sbin/"
+      - "/home/yerson/pspdev/"
+      - "/home/yerson/pspdev/psp/bin/"
+      - "/home/yerson/pspdev/psp/sbin/"
+      - "/home/yerson/pspdev/psp/"
+      - "/home/yerson/pspdev/psp/sdk/bin/"
+      - "/home/yerson/pspdev/psp/sdk/sbin/"
+      - "/home/yerson/pspdev/psp/sdk/"
+    searched_directories:
+      - "/home/yerson/pspdev/bin/psp-gcc-ar-15.2"
+      - "/home/yerson/.local/bin/psp-gcc-ar-15.2"
+      - "/home/yerson/bin/psp-gcc-ar-15.2"
+      - "/usr/local/bin/psp-gcc-ar-15.2"
+      - "/usr/bin/psp-gcc-ar-15.2"
+      - "/bin/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/bin/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/sbin/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/psp/bin/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/psp/sbin/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/psp/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/psp/sdk/bin/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/psp/sdk/sbin/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/psp/sdk/psp-gcc-ar-15.2"
+      - "/home/yerson/pspdev/bin/psp-gcc-ar-15"
+      - "/home/yerson/.local/bin/psp-gcc-ar-15"
+      - "/home/yerson/bin/psp-gcc-ar-15"
+      - "/usr/local/bin/psp-gcc-ar-15"
+      - "/usr/bin/psp-gcc-ar-15"
+      - "/bin/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/bin/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/sbin/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/psp/bin/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/psp/sbin/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/psp/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/psp/sdk/bin/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/psp/sdk/sbin/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/psp/sdk/psp-gcc-ar-15"
+      - "/home/yerson/pspdev/bin/psp-gcc-ar15"
+      - "/home/yerson/.local/bin/psp-gcc-ar15"
+      - "/home/yerson/bin/psp-gcc-ar15"
+      - "/usr/local/bin/psp-gcc-ar15"
+      - "/usr/bin/psp-gcc-ar15"
+      - "/bin/psp-gcc-ar15"
+      - "/home/yerson/pspdev/bin/psp-gcc-ar15"
+      - "/home/yerson/pspdev/sbin/psp-gcc-ar15"
+      - "/home/yerson/pspdev/psp-gcc-ar15"
+      - "/home/yerson/pspdev/psp/bin/psp-gcc-ar15"
+      - "/home/yerson/pspdev/psp/sbin/psp-gcc-ar15"
+      - "/home/yerson/pspdev/psp/psp-gcc-ar15"
+      - "/home/yerson/pspdev/psp/sdk/bin/psp-gcc-ar15"
+      - "/home/yerson/pspdev/psp/sdk/sbin/psp-gcc-ar15"
+      - "/home/yerson/pspdev/psp/sdk/psp-gcc-ar15"
+    found: "/home/yerson/pspdev/bin/psp-gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "psp-gcc-ranlib-15.2"
+      - "psp-gcc-ranlib-15"
+      - "psp-gcc-ranlib15"
+      - "psp-gcc-ranlib"
+    candidate_directories:
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/.local/bin/"
+      - "/home/yerson/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/home/yerson/pspdev/bin/"
+      - "/home/yerson/pspdev/sbin/"
+      - "/home/yerson/pspdev/"
+      - "/home/yerson/pspdev/psp/bin/"
+      - "/home/yerson/pspdev/psp/sbin/"
+      - "/home/yerson/pspdev/psp/"
+      - "/home/yerson/pspdev/psp/sdk/bin/"
+      - "/home/yerson/pspdev/psp/sdk/sbin/"
+      - "/home/yerson/pspdev/psp/sdk/"
+    searched_directories:
+      - "/home/yerson/pspdev/bin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/.local/bin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/bin/psp-gcc-ranlib-15.2"
+      - "/usr/local/bin/psp-gcc-ranlib-15.2"
+      - "/usr/bin/psp-gcc-ranlib-15.2"
+      - "/bin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/bin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/sbin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/psp/bin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/psp/sbin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/psp/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/psp/sdk/bin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/psp/sdk/sbin/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/psp/sdk/psp-gcc-ranlib-15.2"
+      - "/home/yerson/pspdev/bin/psp-gcc-ranlib-15"
+      - "/home/yerson/.local/bin/psp-gcc-ranlib-15"
+      - "/home/yerson/bin/psp-gcc-ranlib-15"
+      - "/usr/local/bin/psp-gcc-ranlib-15"
+      - "/usr/bin/psp-gcc-ranlib-15"
+      - "/bin/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/bin/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/sbin/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/psp/bin/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/psp/sbin/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/psp/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/psp/sdk/bin/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/psp/sdk/sbin/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/psp/sdk/psp-gcc-ranlib-15"
+      - "/home/yerson/pspdev/bin/psp-gcc-ranlib15"
+      - "/home/yerson/.local/bin/psp-gcc-ranlib15"
+      - "/home/yerson/bin/psp-gcc-ranlib15"
+      - "/usr/local/bin/psp-gcc-ranlib15"
+      - "/usr/bin/psp-gcc-ranlib15"
+      - "/bin/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/bin/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/sbin/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/psp/bin/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/psp/sbin/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/psp/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/psp/sdk/bin/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/psp/sdk/sbin/psp-gcc-ranlib15"
+      - "/home/yerson/pspdev/psp/sdk/psp-gcc-ranlib15"
+    found: "/home/yerson/pspdev/bin/psp-gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/yerson/.local/bin"
+        - "/home/yerson/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/home/yerson/pspdev/bin"
+        - "/home/yerson/pspdev/bin"
+      CMAKE_INSTALL_PREFIX: "/home/yerson/pspdev/psp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/yerson/pspdev"
+        - "/home/yerson/pspdev/psp"
+        - "/home/yerson/pspdev/psp/sdk"
+      CMAKE_FIND_ROOT_PATH: "/home/yerson/pspdev;/home/yerson/pspdev/psp;/home/yerson/pspdev/psp/sdk"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/yerson/repos/pspdevtest/build/CMakeFiles/CMakeScratch/TryCompile-TATlhW"
+      binary: "/home/yerson/repos/pspdevtest/build/CMakeFiles/CMakeScratch/TryCompile-TATlhW"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: "-I/home/yerson/pspdev/psp/include -I/home/yerson/pspdev/psp/sdk/include -DPSP"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/yerson/pspdev/lib -L/home/yerson/pspdev/psp/lib -L/home/yerson/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yerson/repos/pspdevtest/build/CMakeFiles/CMakeScratch/TryCompile-TATlhW'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_492b1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_492b1.dir/build.make CMakeFiles/cmTC_492b1.dir/build
+        gmake[1]: Entering directory '/home/yerson/repos/pspdevtest/build/CMakeFiles/CMakeScratch/TryCompile-TATlhW'
+        Building C object CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.obj
+        /home/yerson/pspdev/bin/psp-gcc -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -I/home/yerson/pspdev/psp/include -I/home/yerson/pspdev/psp/sdk/include -DPSP    -v -o CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/home/yerson/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/__w/pspdev/pspdev/pspdev --target=psp --with-sysroot=/__w/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_492b1.dir/'
+         /home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/cc1 -quiet -v -I /home/yerson/pspdev/psp/include -I /home/yerson/pspdev/psp/sdk/include -iprefix /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/ -isysroot /home/yerson/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ -D PSP /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_492b1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mhard-float -msingle-float -version -o /tmp/ccVDtCaE.s
+        GNU C23 (GCC) version 15.2.0 (psp)
+        	compiled by GNU C version 16.1.1 20260515 (Red Hat 16.1.1-2), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/include"
+        ignoring nonexistent directory "/home/yerson/pspdev/bin/../psp/usr/local/include"
+        ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/include-fixed"
+        ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/../../../../psp/include"
+        ignoring duplicate directory "/home/yerson/pspdev/bin/../psp/include"
+        ignoring duplicate directory "/home/yerson/pspdev/psp/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/yerson/pspdev/psp/sdk/include
+         /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/include
+         /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/include-fixed
+         /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include
+        End of search list.
+        Compiler executable checksum: 58a402decc42cf7e16027ce019cae124
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_492b1.dir/'
+         /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.obj /tmp/ccVDtCaE.s
+        COMPILER_PATH=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/:/home/yerson/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_492b1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_492b1.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/home/yerson/pspdev/bin/psp-gcc
+        COLLECT_LTO_WRAPPER=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/__w/pspdev/pspdev/pspdev --target=psp --with-sysroot=/__w/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (GCC) 
+        COMPILER_PATH=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/:/home/yerson/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_492b1' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_492b1.'
+         /home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/collect2 -plugin /home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/liblto_plugin.so -plugin-opt=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmirYwg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lgcc --sysroot=/home/yerson/pspdev/bin/../psp -EL -o cmTC_492b1 /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/crt0.o /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crti.o /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtbegin.o -L/home/yerson/pspdev/lib -L/home/yerson/pspdev/psp/lib -L/home/yerson/pspdev/psp/sdk/lib -L/home/yerson/pspdev/lib -L/home/yerson/pspdev/psp/lib -L/home/yerson/pspdev/psp/sdk/lib -L/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0 -L/home/yerson/pspdev/bin/../lib/gcc -L/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib -L/home/yerson/pspdev/bin/../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.obj -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lgcc /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtend.o /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtn.o
+        /home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper -fresolution=/tmp/ccmirYwg.res -flinker-output=exec /home/yerson/pspdev/psp/lib/libpthread.a@0x60c8e /home/yerson/pspdev/psp/lib/libpthread.a@0x62d06 /home/yerson/pspdev/psp/lib/libpthread.a@0x64fd6 /home/yerson/pspdev/psp/lib/libpthread.a@0x66a92 /home/yerson/pspdev/psp/lib/libpthread.a@0x1aae /home/yerson/pspdev/psp/lib/libpthread.a@0x512e /home/yerson/pspdev/psp/lib/libpthread.a@0x6f2e /home/yerson/pspdev/psp/lib/libpthread.a@0xb542 /home/yerson/pspdev/psp/lib/libpthread.a@0x1a60e /home/yerson/pspdev/psp/lib/libpthread.a@0x1c4ce /home/yerson/pspdev/psp/lib/libpthread.a@0x2722a /home/yerson/pspdev/psp/lib/libpthread.a@0x54a8a /home/yerson/pspdev/psp/lib/libpthread.a@0x594c2 /home/yerson/pspdev/psp/lib/libpthread.a@0x5cf82 /home/yerson/pspdev/psp/lib/libpthread.a@0x5eac2 /home/yerson/pspdev/psp/lib/libpthread.a@0x68d86 /home/yerson/pspdev/psp/lib/libpthread.a@0x6a27e /home/yerson/pspdev/psp/lib/libpthread.a@0x6c7de /home/yerson/pspdev/psp/lib/libpthread.a@0x36a6 
+        /home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper -fresolution=/tmp/ccmirYwg.res -flinker-output=exec /home/yerson/pspdev/psp/lib/libpthread.a@0x60c8e /home/yerson/pspdev/psp/lib/libpthread.a@0x62d06 /home/yerson/pspdev/psp/lib/libpthread.a@0x64fd6 /home/yerson/pspdev/psp/lib/libpthread.a@0x66a92 /home/yerson/pspdev/psp/lib/libpthread.a@0x1aae /home/yerson/pspdev/psp/lib/libpthread.a@0x512e /home/yerson/pspdev/psp/lib/libpthread.a@0x6f2e /home/yerson/pspdev/psp/lib/libpthread.a@0xb542 /home/yerson/pspdev/psp/lib/libpthread.a@0x1a60e /home/yerson/pspdev/psp/lib/libpthread.a@0x1c4ce /home/yerson/pspdev/psp/lib/libpthread.a@0x2722a /home/yerson/pspdev/psp/lib/libpthread.a@0x54a8a /home/yerson/pspdev/psp/lib/libpthread.a@0x594c2 /home/yerson/pspdev/psp/lib/libpthread.a@0x5cf82 /home/yerson/pspdev/psp/lib/libpthread.a@0x5eac2 /home/yerson/pspdev/psp/lib/libpthread.a@0x68d86 /home/yerson/pspdev/psp/lib/libpthread.a@0x6a27e /home/yerson/pspdev/psp/lib/libpthread.a@0x6c7de /home/yerson/pspdev/psp/lib/libpthread.a@0x36a6 
+        /home/yerson/pspdev/bin/psp-gcc @/tmp/cclRD0Uw
+        Using built-in specs.
+        COLLECT_GCC=/home/yerson/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/__w/pspdev/pspdev/pspdev --target=psp --with-sysroot=/__w/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccGBiprr.ltrans.out' '-fwpa' '-fresolution=/tmp/ccmirYwg.res' '-flinker-output=exec'
+         /home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/15.2.0/lto1 -quiet -dumpbase ./cmTC_492b1.wpa -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans-output-list=/tmp/ccGBiprr.ltrans.out -fwpa -fresolution=/tmp/ccmirYwg.res -flinker-output=exec @/tmp/cc9qzUFN
+        GNU GIMPLE (GCC) version 15.2.0 (psp)
+        	compiled by GNU C version 16.1.1 20260515 (Red Hat 16.1.1-2), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COMPILER_PATH=/home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/:/home/yerson/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccGBiprr.ltrans.out' '-fwpa' '-fresolution=/tmp/ccmirYwg.res' '-flinker-output=exec' '-dumpdir' './cmTC_492b1.wpa.'
+        /home/yerson/pspdev/bin/psp-gcc @/tmp/cc7qUPiV
+        Using built-in specs.
+        COLLECT_GCC=/home/yerson/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/__w/pspdev/pspdev/pspdev --target=psp --with-sysroot=/__w/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccGBiprr.ltrans0.ltrans.o'
+         /home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/15.2.0/lto1 -quiet -dumpbase ./cmTC_492b1.ltrans0.ltrans -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans @/tmp/ccg1zEB7 -o /tmp/ccVlJ7ZR.s
+        GNU GIMPLE (GCC) version 15.2.0 (psp)
+        	compiled by GNU C version 16.1.1 20260515 (Red Hat 16.1.1-2), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccGBiprr.ltrans0.ltrans.o'
+         /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/as -EL -O2 -mabi=eabi -mhard-float -mhard-float -msingle-float -msingle-float -o /tmp/ccGBiprr.ltrans0.ltrans.o /tmp/ccVlJ7ZR.s
+        COMPILER_PATH=/home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/:/home/yerson/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccGBiprr.ltrans0.ltrans.o' '-dumpdir' './cmTC_492b1.ltrans0.ltrans.'
+        COLLECT_GCC_OPTIONS='-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_492b1' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_492b1.'
+        /home/yerson/pspdev/bin/psp-gcc -I/home/yerson/pspdev/psp/include -I/home/yerson/pspdev/psp/sdk/include -DPSP  -L/home/yerson/pspdev/lib -L/home/yerson/pspdev/psp/lib -L/home/yerson/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128 -v CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.obj -o cmTC_492b1   -L/home/yerson/pspdev/lib  -L/home/yerson/pspdev/psp/lib  -L/home/yerson/pspdev/psp/sdk/lib
+        gmake[1]: Leaving directory '/home/yerson/repos/pspdevtest/build/CMakeFiles/CMakeScratch/TryCompile-TATlhW'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/yerson/pspdev/psp/sdk/include]
+          add: [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/include]
+          add: [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/include-fixed]
+          add: [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include]
+        end of search list found
+        collapse include dir [/home/yerson/pspdev/psp/sdk/include] ==> [/home/yerson/pspdev/psp/sdk/include]
+        collapse include dir [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/include] ==> [/home/yerson/pspdev/lib/gcc/psp/15.2.0/include]
+        collapse include dir [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/include-fixed] ==> [/home/yerson/pspdev/lib/gcc/psp/15.2.0/include-fixed]
+        collapse include dir [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include] ==> [/home/yerson/pspdev/psp/include]
+        implicit include dirs: [/home/yerson/pspdev/psp/sdk/include;/home/yerson/pspdev/lib/gcc/psp/15.2.0/include;/home/yerson/pspdev/lib/gcc/psp/15.2.0/include-fixed;/home/yerson/pspdev/psp/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/yerson/repos/pspdevtest/build/CMakeFiles/CMakeScratch/TryCompile-TATlhW']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_492b1/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_492b1.dir/build.make CMakeFiles/cmTC_492b1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/yerson/repos/pspdevtest/build/CMakeFiles/CMakeScratch/TryCompile-TATlhW']
+        ignore line: [Building C object CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/home/yerson/pspdev/bin/psp-gcc -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -I/home/yerson/pspdev/psp/include -I/home/yerson/pspdev/psp/sdk/include -DPSP    -v -o CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/yerson/pspdev/bin/psp-gcc]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/__w/pspdev/pspdev/pspdev --target=psp --with-sysroot=/__w/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_492b1.dir/']
+        ignore line: [ /home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/cc1 -quiet -v -I /home/yerson/pspdev/psp/include -I /home/yerson/pspdev/psp/sdk/include -iprefix /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/ -isysroot /home/yerson/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ -D PSP /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_492b1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mhard-float -msingle-float -version -o /tmp/ccVDtCaE.s]
+        ignore line: [GNU C23 (GCC) version 15.2.0 (psp)]
+        ignore line: [	compiled by GNU C version 16.1.1 20260515 (Red Hat 16.1.1-2)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/yerson/pspdev/bin/../psp/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/../../../../psp/include"]
+        ignore line: [ignoring duplicate directory "/home/yerson/pspdev/bin/../psp/include"]
+        ignore line: [ignoring duplicate directory "/home/yerson/pspdev/psp/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/yerson/pspdev/psp/sdk/include]
+        ignore line: [ /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/include]
+        ignore line: [ /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/include-fixed]
+        ignore line: [ /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 58a402decc42cf7e16027ce019cae124]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_492b1.dir/']
+        ignore line: [ /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.obj /tmp/ccVDtCaE.s]
+        ignore line: [COMPILER_PATH=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/:/home/yerson/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_492b1]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_492b1.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/yerson/pspdev/bin/psp-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/__w/pspdev/pspdev/pspdev --target=psp --with-sysroot=/__w/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/:/home/yerson/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_492b1' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_492b1.']
+        link line: [ /home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/collect2 -plugin /home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/liblto_plugin.so -plugin-opt=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmirYwg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lgcc --sysroot=/home/yerson/pspdev/bin/../psp -EL -o cmTC_492b1 /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/crt0.o /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crti.o /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtbegin.o -L/home/yerson/pspdev/lib -L/home/yerson/pspdev/psp/lib -L/home/yerson/pspdev/psp/sdk/lib -L/home/yerson/pspdev/lib -L/home/yerson/pspdev/psp/lib -L/home/yerson/pspdev/psp/sdk/lib -L/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0 -L/home/yerson/pspdev/bin/../lib/gcc -L/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib -L/home/yerson/pspdev/bin/../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.obj -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lgcc /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtend.o /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtn.o]
+          arg [/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccmirYwg.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lm] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthreadglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lcglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsputility] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsprtc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_inet] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_resolver] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspsdk] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspmodinfo] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspuser] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/yerson/pspdev/bin/../psp] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_492b1] ==> ignore
+          arg [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/crt0.o] ==> obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/crt0.o]
+          arg [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crti.o] ==> obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crti.o]
+          arg [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtbegin.o] ==> obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtbegin.o]
+          arg [-L/home/yerson/pspdev/lib] ==> dir [/home/yerson/pspdev/lib]
+          arg [-L/home/yerson/pspdev/psp/lib] ==> dir [/home/yerson/pspdev/psp/lib]
+          arg [-L/home/yerson/pspdev/psp/sdk/lib] ==> dir [/home/yerson/pspdev/psp/sdk/lib]
+          arg [-L/home/yerson/pspdev/lib] ==> dir [/home/yerson/pspdev/lib]
+          arg [-L/home/yerson/pspdev/psp/lib] ==> dir [/home/yerson/pspdev/psp/lib]
+          arg [-L/home/yerson/pspdev/psp/sdk/lib] ==> dir [/home/yerson/pspdev/psp/sdk/lib]
+          arg [-L/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0] ==> dir [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0]
+          arg [-L/home/yerson/pspdev/bin/../lib/gcc] ==> dir [/home/yerson/pspdev/bin/../lib/gcc]
+          arg [-L/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib] ==> dir [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib]
+          arg [-L/home/yerson/pspdev/bin/../psp/lib] ==> dir [/home/yerson/pspdev/bin/../psp/lib]
+          arg [-zmax-page-size=128] ==> ignore
+          arg [CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lm] ==> lib [m]
+          arg [--start-group] ==> ignore
+          arg [-lpthreadglue] ==> lib [pthreadglue]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lcglue] ==> lib [cglue]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+          arg [-lpsputility] ==> lib [psputility]
+          arg [-lpsprtc] ==> lib [psprtc]
+          arg [-lpspnet_inet] ==> lib [pspnet_inet]
+          arg [-lpspnet_resolver] ==> lib [pspnet_resolver]
+          arg [-lpspsdk] ==> lib [pspsdk]
+          arg [-lpspmodinfo] ==> lib [pspmodinfo]
+          arg [-lpspuser] ==> lib [pspuser]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtend.o] ==> obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtend.o]
+          arg [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtn.o] ==> obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtn.o]
+        ignore line: [/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper -fresolution=/tmp/ccmirYwg.res -flinker-output=exec /home/yerson/pspdev/psp/lib/libpthread.a@0x60c8e /home/yerson/pspdev/psp/lib/libpthread.a@0x62d06 /home/yerson/pspdev/psp/lib/libpthread.a@0x64fd6 /home/yerson/pspdev/psp/lib/libpthread.a@0x66a92 /home/yerson/pspdev/psp/lib/libpthread.a@0x1aae /home/yerson/pspdev/psp/lib/libpthread.a@0x512e /home/yerson/pspdev/psp/lib/libpthread.a@0x6f2e /home/yerson/pspdev/psp/lib/libpthread.a@0xb542 /home/yerson/pspdev/psp/lib/libpthread.a@0x1a60e /home/yerson/pspdev/psp/lib/libpthread.a@0x1c4ce /home/yerson/pspdev/psp/lib/libpthread.a@0x2722a /home/yerson/pspdev/psp/lib/libpthread.a@0x54a8a /home/yerson/pspdev/psp/lib/libpthread.a@0x594c2 /home/yerson/pspdev/psp/lib/libpthread.a@0x5cf82 /home/yerson/pspdev/psp/lib/libpthread.a@0x5eac2 /home/yerson/pspdev/psp/lib/libpthread.a@0x68d86 /home/yerson/pspdev/psp/lib/libpthread.a@0x6a27e /home/yerson/pspdev/psp/lib/libpthread.a@0x6c7de /home/yerson/pspdev/psp/lib/libpthread.a@0x36a6 ]
+        ignore line: [/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper -fresolution=/tmp/ccmirYwg.res -flinker-output=exec /home/yerson/pspdev/psp/lib/libpthread.a@0x60c8e /home/yerson/pspdev/psp/lib/libpthread.a@0x62d06 /home/yerson/pspdev/psp/lib/libpthread.a@0x64fd6 /home/yerson/pspdev/psp/lib/libpthread.a@0x66a92 /home/yerson/pspdev/psp/lib/libpthread.a@0x1aae /home/yerson/pspdev/psp/lib/libpthread.a@0x512e /home/yerson/pspdev/psp/lib/libpthread.a@0x6f2e /home/yerson/pspdev/psp/lib/libpthread.a@0xb542 /home/yerson/pspdev/psp/lib/libpthread.a@0x1a60e /home/yerson/pspdev/psp/lib/libpthread.a@0x1c4ce /home/yerson/pspdev/psp/lib/libpthread.a@0x2722a /home/yerson/pspdev/psp/lib/libpthread.a@0x54a8a /home/yerson/pspdev/psp/lib/libpthread.a@0x594c2 /home/yerson/pspdev/psp/lib/libpthread.a@0x5cf82 /home/yerson/pspdev/psp/lib/libpthread.a@0x5eac2 /home/yerson/pspdev/psp/lib/libpthread.a@0x68d86 /home/yerson/pspdev/psp/lib/libpthread.a@0x6a27e /home/yerson/pspdev/psp/lib/libpthread.a@0x6c7de /home/yerson/pspdev/psp/lib/libpthread.a@0x36a6 ]
+        ignore line: [/home/yerson/pspdev/bin/psp-gcc @/tmp/cclRD0Uw]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/yerson/pspdev/bin/psp-gcc]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/__w/pspdev/pspdev/pspdev --target=psp --with-sysroot=/__w/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccGBiprr.ltrans.out' '-fwpa' '-fresolution=/tmp/ccmirYwg.res' '-flinker-output=exec']
+        ignore line: [ /home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/15.2.0/lto1 -quiet -dumpbase ./cmTC_492b1.wpa -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans-output-list=/tmp/ccGBiprr.ltrans.out -fwpa -fresolution=/tmp/ccmirYwg.res -flinker-output=exec @/tmp/cc9qzUFN]
+        ignore line: [GNU GIMPLE (GCC) version 15.2.0 (psp)]
+        ignore line: [	compiled by GNU C version 16.1.1 20260515 (Red Hat 16.1.1-2)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [COMPILER_PATH=/home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/:/home/yerson/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccGBiprr.ltrans.out' '-fwpa' '-fresolution=/tmp/ccmirYwg.res' '-flinker-output=exec' '-dumpdir' './cmTC_492b1.wpa.']
+        ignore line: [/home/yerson/pspdev/bin/psp-gcc @/tmp/cc7qUPiV]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/yerson/pspdev/bin/psp-gcc]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/__w/pspdev/pspdev/pspdev --target=psp --with-sysroot=/__w/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccGBiprr.ltrans0.ltrans.o']
+        ignore line: [ /home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/15.2.0/lto1 -quiet -dumpbase ./cmTC_492b1.ltrans0.ltrans -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans @/tmp/ccg1zEB7 -o /tmp/ccVlJ7ZR.s]
+        ignore line: [GNU GIMPLE (GCC) version 15.2.0 (psp)]
+        ignore line: [	compiled by GNU C version 16.1.1 20260515 (Red Hat 16.1.1-2)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccGBiprr.ltrans0.ltrans.o']
+        ignore line: [ /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/as -EL -O2 -mabi=eabi -mhard-float -mhard-float -msingle-float -msingle-float -o /tmp/ccGBiprr.ltrans0.ltrans.o /tmp/ccVlJ7ZR.s]
+        ignore line: [COMPILER_PATH=/home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/:/home/yerson/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccGBiprr.ltrans0.ltrans.o' '-dumpdir' './cmTC_492b1.ltrans0.ltrans.']
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_492b1' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_492b1.']
+        ignore line: [/home/yerson/pspdev/bin/psp-gcc -I/home/yerson/pspdev/psp/include -I/home/yerson/pspdev/psp/sdk/include -DPSP  -L/home/yerson/pspdev/lib -L/home/yerson/pspdev/psp/lib -L/home/yerson/pspdev/psp/sdk/lib -Wl -zmax-page-size=128 -v CMakeFiles/cmTC_492b1.dir/CMakeCCompilerABI.c.obj -o cmTC_492b1   -L/home/yerson/pspdev/lib  -L/home/yerson/pspdev/psp/lib  -L/home/yerson/pspdev/psp/sdk/lib]
+        ignore line: [gmake[1]: Leaving directory '/home/yerson/repos/pspdevtest/build/CMakeFiles/CMakeScratch/TryCompile-TATlhW']
+        ignore line: []
+        ignore line: []
+        collapse obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/crt0.o] ==> [/home/yerson/pspdev/psp/lib/crt0.o]
+        collapse obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crti.o] ==> [/home/yerson/pspdev/lib/gcc/psp/15.2.0/crti.o]
+        collapse obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtbegin.o] ==> [/home/yerson/pspdev/lib/gcc/psp/15.2.0/crtbegin.o]
+        collapse obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtend.o] ==> [/home/yerson/pspdev/lib/gcc/psp/15.2.0/crtend.o]
+        collapse obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtn.o] ==> [/home/yerson/pspdev/lib/gcc/psp/15.2.0/crtn.o]
+        collapse library dir [/home/yerson/pspdev/lib] ==> [/home/yerson/pspdev/lib]
+        collapse library dir [/home/yerson/pspdev/psp/lib] ==> [/home/yerson/pspdev/psp/lib]
+        collapse library dir [/home/yerson/pspdev/psp/sdk/lib] ==> [/home/yerson/pspdev/psp/sdk/lib]
+        collapse library dir [/home/yerson/pspdev/lib] ==> [/home/yerson/pspdev/lib]
+        collapse library dir [/home/yerson/pspdev/psp/lib] ==> [/home/yerson/pspdev/psp/lib]
+        collapse library dir [/home/yerson/pspdev/psp/sdk/lib] ==> [/home/yerson/pspdev/psp/sdk/lib]
+        collapse library dir [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0] ==> [/home/yerson/pspdev/lib/gcc/psp/15.2.0]
+        collapse library dir [/home/yerson/pspdev/bin/../lib/gcc] ==> [/home/yerson/pspdev/lib/gcc]
+        collapse library dir [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib] ==> [/home/yerson/pspdev/psp/lib]
+        collapse library dir [/home/yerson/pspdev/bin/../psp/lib] ==> [/home/yerson/pspdev/psp/lib]
+        implicit libs: [gcc;m;pthreadglue;pthread;cglue;c;psputility;psprtc;pspnet_inet;pspnet_resolver;pspsdk;pspmodinfo;pspuser;gcc]
+        implicit objs: [/home/yerson/pspdev/psp/lib/crt0.o;/home/yerson/pspdev/lib/gcc/psp/15.2.0/crti.o;/home/yerson/pspdev/lib/gcc/psp/15.2.0/crtbegin.o;/home/yerson/pspdev/lib/gcc/psp/15.2.0/crtend.o;/home/yerson/pspdev/lib/gcc/psp/15.2.0/crtn.o]
+        implicit dirs: [/home/yerson/pspdev/lib;/home/yerson/pspdev/psp/lib;/home/yerson/pspdev/psp/sdk/lib;/home/yerson/pspdev/lib/gcc/psp/15.2.0;/home/yerson/pspdev/lib/gcc]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/yerson/repos/pspdevtest/build/CMakeFiles/CMakeScratch/TryCompile-3hGVJQ"
+      binary: "/home/yerson/repos/pspdevtest/build/CMakeFiles/CMakeScratch/TryCompile-3hGVJQ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/yerson/pspdev/psp/include -I/home/yerson/pspdev/psp/sdk/include -DPSP"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/yerson/pspdev/lib -L/home/yerson/pspdev/psp/lib -L/home/yerson/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yerson/repos/pspdevtest/build/CMakeFiles/CMakeScratch/TryCompile-3hGVJQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5f440/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5f440.dir/build.make CMakeFiles/cmTC_5f440.dir/build
+        gmake[1]: Entering directory '/home/yerson/repos/pspdevtest/build/CMakeFiles/CMakeScratch/TryCompile-3hGVJQ'
+        Building CXX object CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.obj
+        /home/yerson/pspdev/bin/psp-g++ -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -I/home/yerson/pspdev/psp/include -I/home/yerson/pspdev/psp/sdk/include -DPSP    -v -o CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/home/yerson/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/__w/pspdev/pspdev/pspdev --target=psp --with-sysroot=/__w/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_5f440.dir/'
+         /home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/cc1plus -quiet -v -I /home/yerson/pspdev/psp/include -I /home/yerson/pspdev/psp/sdk/include -iprefix /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/ -isysroot /home/yerson/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ -D PSP /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_5f440.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mhard-float -msingle-float -version -o /tmp/ccd9NHQw.s
+        GNU C++17 (GCC) version 15.2.0 (psp)
+        	compiled by GNU C version 16.1.1 20260515 (Red Hat 16.1.1-2), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0"
+        ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0/psp"
+        ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0/backward"
+        ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/include"
+        ignoring nonexistent directory "/home/yerson/pspdev/bin/../psp/usr/local/include"
+        ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/include-fixed"
+        ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/../../../../psp/include"
+        ignoring duplicate directory "/home/yerson/pspdev/bin/../psp/include"
+        ignoring duplicate directory "/home/yerson/pspdev/psp/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/yerson/pspdev/psp/sdk/include
+         /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0
+         /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0/psp
+         /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0/backward
+         /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/include
+         /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/include-fixed
+         /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include
+        End of search list.
+        Compiler executable checksum: d54bf4d17e3cd508bbd171094b5b42cd
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_5f440.dir/'
+         /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccd9NHQw.s
+        COMPILER_PATH=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/:/home/yerson/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_5f440
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f440.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/home/yerson/pspdev/bin/psp-g++
+        COLLECT_LTO_WRAPPER=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/__w/pspdev/pspdev/pspdev --target=psp --with-sysroot=/__w/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (GCC) 
+        COMPILER_PATH=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/:/home/yerson/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_5f440' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_5f440.'
+         /home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/collect2 -plugin /home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/liblto_plugin.so -plugin-opt=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccv6yzfH.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lgcc --sysroot=/home/yerson/pspdev/bin/../psp -EL -o cmTC_5f440 /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/crt0.o /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crti.o /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtbegin.o -L/home/yerson/pspdev/lib -L/home/yerson/pspdev/psp/lib -L/home/yerson/pspdev/psp/sdk/lib -L/home/yerson/pspdev/lib -L/home/yerson/pspdev/psp/lib -L/home/yerson/pspdev/psp/sdk/lib -L/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0 -L/home/yerson/pspdev/bin/../lib/gcc -L/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib -L/home/yerson/pspdev/bin/../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lgcc /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtend.o /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtn.o
+        /home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper -fresolution=/tmp/ccv6yzfH.res -flinker-output=exec /home/yerson/pspdev/psp/lib/libpthread.a@0x60c8e /home/yerson/pspdev/psp/lib/libpthread.a@0x62d06 /home/yerson/pspdev/psp/lib/libpthread.a@0x64fd6 /home/yerson/pspdev/psp/lib/libpthread.a@0x66a92 /home/yerson/pspdev/psp/lib/libpthread.a@0x1aae /home/yerson/pspdev/psp/lib/libpthread.a@0x512e /home/yerson/pspdev/psp/lib/libpthread.a@0x6f2e /home/yerson/pspdev/psp/lib/libpthread.a@0xb542 /home/yerson/pspdev/psp/lib/libpthread.a@0x1a60e /home/yerson/pspdev/psp/lib/libpthread.a@0x1c4ce /home/yerson/pspdev/psp/lib/libpthread.a@0x2722a /home/yerson/pspdev/psp/lib/libpthread.a@0x54a8a /home/yerson/pspdev/psp/lib/libpthread.a@0x594c2 /home/yerson/pspdev/psp/lib/libpthread.a@0x5cf82 /home/yerson/pspdev/psp/lib/libpthread.a@0x5eac2 /home/yerson/pspdev/psp/lib/libpthread.a@0x68d86 /home/yerson/pspdev/psp/lib/libpthread.a@0x6a27e /home/yerson/pspdev/psp/lib/libpthread.a@0x6c7de /home/yerson/pspdev/psp/lib/libpthread.a@0x36a6 
+        /home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper -fresolution=/tmp/ccv6yzfH.res -flinker-output=exec /home/yerson/pspdev/psp/lib/libpthread.a@0x60c8e /home/yerson/pspdev/psp/lib/libpthread.a@0x62d06 /home/yerson/pspdev/psp/lib/libpthread.a@0x64fd6 /home/yerson/pspdev/psp/lib/libpthread.a@0x66a92 /home/yerson/pspdev/psp/lib/libpthread.a@0x1aae /home/yerson/pspdev/psp/lib/libpthread.a@0x512e /home/yerson/pspdev/psp/lib/libpthread.a@0x6f2e /home/yerson/pspdev/psp/lib/libpthread.a@0xb542 /home/yerson/pspdev/psp/lib/libpthread.a@0x1a60e /home/yerson/pspdev/psp/lib/libpthread.a@0x1c4ce /home/yerson/pspdev/psp/lib/libpthread.a@0x2722a /home/yerson/pspdev/psp/lib/libpthread.a@0x54a8a /home/yerson/pspdev/psp/lib/libpthread.a@0x594c2 /home/yerson/pspdev/psp/lib/libpthread.a@0x5cf82 /home/yerson/pspdev/psp/lib/libpthread.a@0x5eac2 /home/yerson/pspdev/psp/lib/libpthread.a@0x68d86 /home/yerson/pspdev/psp/lib/libpthread.a@0x6a27e /home/yerson/pspdev/psp/lib/libpthread.a@0x6c7de /home/yerson/pspdev/psp/lib/libpthread.a@0x36a6 
+        /home/yerson/pspdev/bin/psp-g++ @/tmp/ccJgke99
+        Using built-in specs.
+        COLLECT_GCC=/home/yerson/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/__w/pspdev/pspdev/pspdev --target=psp --with-sysroot=/__w/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccIgYnUZ.ltrans.out' '-fwpa' '-fresolution=/tmp/ccv6yzfH.res' '-flinker-output=exec'
+         /home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/15.2.0/lto1 -quiet -dumpbase ./cmTC_5f440.wpa -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans-output-list=/tmp/ccIgYnUZ.ltrans.out -fwpa -fresolution=/tmp/ccv6yzfH.res -flinker-output=exec @/tmp/cchQ3zPy
+        GNU GIMPLE (GCC) version 15.2.0 (psp)
+        	compiled by GNU C version 16.1.1 20260515 (Red Hat 16.1.1-2), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COMPILER_PATH=/home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/:/home/yerson/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccIgYnUZ.ltrans.out' '-fwpa' '-fresolution=/tmp/ccv6yzfH.res' '-flinker-output=exec' '-dumpdir' './cmTC_5f440.wpa.'
+        /home/yerson/pspdev/bin/psp-g++ @/tmp/ccif1m33
+        Using built-in specs.
+        COLLECT_GCC=/home/yerson/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/__w/pspdev/pspdev/pspdev --target=psp --with-sysroot=/__w/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccIgYnUZ.ltrans0.ltrans.o'
+         /home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/15.2.0/lto1 -quiet -dumpbase ./cmTC_5f440.ltrans0.ltrans -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans @/tmp/ccZayUPR -o /tmp/ccomCdal.s
+        GNU GIMPLE (GCC) version 15.2.0 (psp)
+        	compiled by GNU C version 16.1.1 20260515 (Red Hat 16.1.1-2), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccIgYnUZ.ltrans0.ltrans.o'
+         /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/as -EL -O2 -mabi=eabi -mhard-float -mhard-float -msingle-float -msingle-float -o /tmp/ccIgYnUZ.ltrans0.ltrans.o /tmp/ccomCdal.s
+        COMPILER_PATH=/home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/:/home/yerson/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccIgYnUZ.ltrans0.ltrans.o' '-dumpdir' './cmTC_5f440.ltrans0.ltrans.'
+        COLLECT_GCC_OPTIONS='-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_5f440' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_5f440.'
+        /home/yerson/pspdev/bin/psp-g++ -I/home/yerson/pspdev/psp/include -I/home/yerson/pspdev/psp/sdk/include -DPSP  -L/home/yerson/pspdev/lib -L/home/yerson/pspdev/psp/lib -L/home/yerson/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128 -v CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_5f440   -L/home/yerson/pspdev/lib  -L/home/yerson/pspdev/psp/lib  -L/home/yerson/pspdev/psp/sdk/lib
+        gmake[1]: Leaving directory '/home/yerson/repos/pspdevtest/build/CMakeFiles/CMakeScratch/TryCompile-3hGVJQ'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/yerson/pspdev/psp/sdk/include]
+          add: [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0]
+          add: [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0/psp]
+          add: [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0/backward]
+          add: [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/include]
+          add: [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/include-fixed]
+          add: [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include]
+        end of search list found
+        collapse include dir [/home/yerson/pspdev/psp/sdk/include] ==> [/home/yerson/pspdev/psp/sdk/include]
+        collapse include dir [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0] ==> [/home/yerson/pspdev/psp/include/c++/15.2.0]
+        collapse include dir [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0/psp] ==> [/home/yerson/pspdev/psp/include/c++/15.2.0/psp]
+        collapse include dir [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0/backward] ==> [/home/yerson/pspdev/psp/include/c++/15.2.0/backward]
+        collapse include dir [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/include] ==> [/home/yerson/pspdev/lib/gcc/psp/15.2.0/include]
+        collapse include dir [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/include-fixed] ==> [/home/yerson/pspdev/lib/gcc/psp/15.2.0/include-fixed]
+        collapse include dir [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include] ==> [/home/yerson/pspdev/psp/include]
+        implicit include dirs: [/home/yerson/pspdev/psp/sdk/include;/home/yerson/pspdev/psp/include/c++/15.2.0;/home/yerson/pspdev/psp/include/c++/15.2.0/psp;/home/yerson/pspdev/psp/include/c++/15.2.0/backward;/home/yerson/pspdev/lib/gcc/psp/15.2.0/include;/home/yerson/pspdev/lib/gcc/psp/15.2.0/include-fixed;/home/yerson/pspdev/psp/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/yerson/repos/pspdevtest/build/CMakeFiles/CMakeScratch/TryCompile-3hGVJQ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5f440/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_5f440.dir/build.make CMakeFiles/cmTC_5f440.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/yerson/repos/pspdevtest/build/CMakeFiles/CMakeScratch/TryCompile-3hGVJQ']
+        ignore line: [Building CXX object CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/home/yerson/pspdev/bin/psp-g++ -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -I/home/yerson/pspdev/psp/include -I/home/yerson/pspdev/psp/sdk/include -DPSP    -v -o CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/yerson/pspdev/bin/psp-g++]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/__w/pspdev/pspdev/pspdev --target=psp --with-sysroot=/__w/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_5f440.dir/']
+        ignore line: [ /home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/cc1plus -quiet -v -I /home/yerson/pspdev/psp/include -I /home/yerson/pspdev/psp/sdk/include -iprefix /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/ -isysroot /home/yerson/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ -D PSP /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_5f440.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mhard-float -msingle-float -version -o /tmp/ccd9NHQw.s]
+        ignore line: [GNU C++17 (GCC) version 15.2.0 (psp)]
+        ignore line: [	compiled by GNU C version 16.1.1 20260515 (Red Hat 16.1.1-2)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0"]
+        ignore line: [ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0/psp"]
+        ignore line: [ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0/backward"]
+        ignore line: [ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/yerson/pspdev/bin/../psp/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/yerson/pspdev/bin/../lib/gcc/../../lib/gcc/psp/15.2.0/../../../../psp/include"]
+        ignore line: [ignoring duplicate directory "/home/yerson/pspdev/bin/../psp/include"]
+        ignore line: [ignoring duplicate directory "/home/yerson/pspdev/psp/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/yerson/pspdev/psp/sdk/include]
+        ignore line: [ /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0]
+        ignore line: [ /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0/psp]
+        ignore line: [ /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include/c++/15.2.0/backward]
+        ignore line: [ /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/include]
+        ignore line: [ /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/include-fixed]
+        ignore line: [ /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: d54bf4d17e3cd508bbd171094b5b42cd]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_5f440.dir/']
+        ignore line: [ /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccd9NHQw.s]
+        ignore line: [COMPILER_PATH=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/:/home/yerson/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_5f440]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f440.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/yerson/pspdev/bin/psp-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/__w/pspdev/pspdev/pspdev --target=psp --with-sysroot=/__w/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/:/home/yerson/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_5f440' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_5f440.']
+        link line: [ /home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/collect2 -plugin /home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/liblto_plugin.so -plugin-opt=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccv6yzfH.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lgcc --sysroot=/home/yerson/pspdev/bin/../psp -EL -o cmTC_5f440 /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/crt0.o /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crti.o /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtbegin.o -L/home/yerson/pspdev/lib -L/home/yerson/pspdev/psp/lib -L/home/yerson/pspdev/psp/sdk/lib -L/home/yerson/pspdev/lib -L/home/yerson/pspdev/psp/lib -L/home/yerson/pspdev/psp/sdk/lib -L/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0 -L/home/yerson/pspdev/bin/../lib/gcc -L/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib -L/home/yerson/pspdev/bin/../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lgcc /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtend.o /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtn.o]
+          arg [/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccv6yzfH.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lm] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthreadglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lcglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsputility] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsprtc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_inet] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_resolver] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspsdk] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspmodinfo] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspuser] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/yerson/pspdev/bin/../psp] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_5f440] ==> ignore
+          arg [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/crt0.o] ==> obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/crt0.o]
+          arg [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crti.o] ==> obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crti.o]
+          arg [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtbegin.o] ==> obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtbegin.o]
+          arg [-L/home/yerson/pspdev/lib] ==> dir [/home/yerson/pspdev/lib]
+          arg [-L/home/yerson/pspdev/psp/lib] ==> dir [/home/yerson/pspdev/psp/lib]
+          arg [-L/home/yerson/pspdev/psp/sdk/lib] ==> dir [/home/yerson/pspdev/psp/sdk/lib]
+          arg [-L/home/yerson/pspdev/lib] ==> dir [/home/yerson/pspdev/lib]
+          arg [-L/home/yerson/pspdev/psp/lib] ==> dir [/home/yerson/pspdev/psp/lib]
+          arg [-L/home/yerson/pspdev/psp/sdk/lib] ==> dir [/home/yerson/pspdev/psp/sdk/lib]
+          arg [-L/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0] ==> dir [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0]
+          arg [-L/home/yerson/pspdev/bin/../lib/gcc] ==> dir [/home/yerson/pspdev/bin/../lib/gcc]
+          arg [-L/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib] ==> dir [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib]
+          arg [-L/home/yerson/pspdev/bin/../psp/lib] ==> dir [/home/yerson/pspdev/bin/../psp/lib]
+          arg [-zmax-page-size=128] ==> ignore
+          arg [CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lm] ==> lib [m]
+          arg [--start-group] ==> ignore
+          arg [-lpthreadglue] ==> lib [pthreadglue]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lcglue] ==> lib [cglue]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+          arg [-lpsputility] ==> lib [psputility]
+          arg [-lpsprtc] ==> lib [psprtc]
+          arg [-lpspnet_inet] ==> lib [pspnet_inet]
+          arg [-lpspnet_resolver] ==> lib [pspnet_resolver]
+          arg [-lpspsdk] ==> lib [pspsdk]
+          arg [-lpspmodinfo] ==> lib [pspmodinfo]
+          arg [-lpspuser] ==> lib [pspuser]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtend.o] ==> obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtend.o]
+          arg [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtn.o] ==> obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtn.o]
+        ignore line: [/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper -fresolution=/tmp/ccv6yzfH.res -flinker-output=exec /home/yerson/pspdev/psp/lib/libpthread.a@0x60c8e /home/yerson/pspdev/psp/lib/libpthread.a@0x62d06 /home/yerson/pspdev/psp/lib/libpthread.a@0x64fd6 /home/yerson/pspdev/psp/lib/libpthread.a@0x66a92 /home/yerson/pspdev/psp/lib/libpthread.a@0x1aae /home/yerson/pspdev/psp/lib/libpthread.a@0x512e /home/yerson/pspdev/psp/lib/libpthread.a@0x6f2e /home/yerson/pspdev/psp/lib/libpthread.a@0xb542 /home/yerson/pspdev/psp/lib/libpthread.a@0x1a60e /home/yerson/pspdev/psp/lib/libpthread.a@0x1c4ce /home/yerson/pspdev/psp/lib/libpthread.a@0x2722a /home/yerson/pspdev/psp/lib/libpthread.a@0x54a8a /home/yerson/pspdev/psp/lib/libpthread.a@0x594c2 /home/yerson/pspdev/psp/lib/libpthread.a@0x5cf82 /home/yerson/pspdev/psp/lib/libpthread.a@0x5eac2 /home/yerson/pspdev/psp/lib/libpthread.a@0x68d86 /home/yerson/pspdev/psp/lib/libpthread.a@0x6a27e /home/yerson/pspdev/psp/lib/libpthread.a@0x6c7de /home/yerson/pspdev/psp/lib/libpthread.a@0x36a6 ]
+        ignore line: [/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/lto-wrapper -fresolution=/tmp/ccv6yzfH.res -flinker-output=exec /home/yerson/pspdev/psp/lib/libpthread.a@0x60c8e /home/yerson/pspdev/psp/lib/libpthread.a@0x62d06 /home/yerson/pspdev/psp/lib/libpthread.a@0x64fd6 /home/yerson/pspdev/psp/lib/libpthread.a@0x66a92 /home/yerson/pspdev/psp/lib/libpthread.a@0x1aae /home/yerson/pspdev/psp/lib/libpthread.a@0x512e /home/yerson/pspdev/psp/lib/libpthread.a@0x6f2e /home/yerson/pspdev/psp/lib/libpthread.a@0xb542 /home/yerson/pspdev/psp/lib/libpthread.a@0x1a60e /home/yerson/pspdev/psp/lib/libpthread.a@0x1c4ce /home/yerson/pspdev/psp/lib/libpthread.a@0x2722a /home/yerson/pspdev/psp/lib/libpthread.a@0x54a8a /home/yerson/pspdev/psp/lib/libpthread.a@0x594c2 /home/yerson/pspdev/psp/lib/libpthread.a@0x5cf82 /home/yerson/pspdev/psp/lib/libpthread.a@0x5eac2 /home/yerson/pspdev/psp/lib/libpthread.a@0x68d86 /home/yerson/pspdev/psp/lib/libpthread.a@0x6a27e /home/yerson/pspdev/psp/lib/libpthread.a@0x6c7de /home/yerson/pspdev/psp/lib/libpthread.a@0x36a6 ]
+        ignore line: [/home/yerson/pspdev/bin/psp-g++ @/tmp/ccJgke99]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/yerson/pspdev/bin/psp-g++]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/__w/pspdev/pspdev/pspdev --target=psp --with-sysroot=/__w/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccIgYnUZ.ltrans.out' '-fwpa' '-fresolution=/tmp/ccv6yzfH.res' '-flinker-output=exec']
+        ignore line: [ /home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/15.2.0/lto1 -quiet -dumpbase ./cmTC_5f440.wpa -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans-output-list=/tmp/ccIgYnUZ.ltrans.out -fwpa -fresolution=/tmp/ccv6yzfH.res -flinker-output=exec @/tmp/cchQ3zPy]
+        ignore line: [GNU GIMPLE (GCC) version 15.2.0 (psp)]
+        ignore line: [	compiled by GNU C version 16.1.1 20260515 (Red Hat 16.1.1-2)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [COMPILER_PATH=/home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/:/home/yerson/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccIgYnUZ.ltrans.out' '-fwpa' '-fresolution=/tmp/ccv6yzfH.res' '-flinker-output=exec' '-dumpdir' './cmTC_5f440.wpa.']
+        ignore line: [/home/yerson/pspdev/bin/psp-g++ @/tmp/ccif1m33]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/yerson/pspdev/bin/psp-g++]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/__w/pspdev/pspdev/pspdev --target=psp --with-sysroot=/__w/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccIgYnUZ.ltrans0.ltrans.o']
+        ignore line: [ /home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/15.2.0/lto1 -quiet -dumpbase ./cmTC_5f440.ltrans0.ltrans -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans @/tmp/ccZayUPR -o /tmp/ccomCdal.s]
+        ignore line: [GNU GIMPLE (GCC) version 15.2.0 (psp)]
+        ignore line: [	compiled by GNU C version 16.1.1 20260515 (Red Hat 16.1.1-2)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccIgYnUZ.ltrans0.ltrans.o']
+        ignore line: [ /home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/as -EL -O2 -mabi=eabi -mhard-float -mhard-float -msingle-float -msingle-float -o /tmp/ccIgYnUZ.ltrans0.ltrans.o /tmp/ccomCdal.s]
+        ignore line: [COMPILER_PATH=/home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../libexec/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/:/home/yerson/pspdev/bin/../lib/gcc/:/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/:/home/yerson/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccIgYnUZ.ltrans0.ltrans.o' '-dumpdir' './cmTC_5f440.ltrans0.ltrans.']
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/yerson/pspdev/psp/include' '-I' '/home/yerson/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_5f440' '-L/home/yerson/pspdev/lib' '-L/home/yerson/pspdev/psp/lib' '-L/home/yerson/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_5f440.']
+        ignore line: [/home/yerson/pspdev/bin/psp-g++ -I/home/yerson/pspdev/psp/include -I/home/yerson/pspdev/psp/sdk/include -DPSP  -L/home/yerson/pspdev/lib -L/home/yerson/pspdev/psp/lib -L/home/yerson/pspdev/psp/sdk/lib -Wl -zmax-page-size=128 -v CMakeFiles/cmTC_5f440.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_5f440   -L/home/yerson/pspdev/lib  -L/home/yerson/pspdev/psp/lib  -L/home/yerson/pspdev/psp/sdk/lib]
+        ignore line: [gmake[1]: Leaving directory '/home/yerson/repos/pspdevtest/build/CMakeFiles/CMakeScratch/TryCompile-3hGVJQ']
+        ignore line: []
+        ignore line: []
+        collapse obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib/crt0.o] ==> [/home/yerson/pspdev/psp/lib/crt0.o]
+        collapse obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crti.o] ==> [/home/yerson/pspdev/lib/gcc/psp/15.2.0/crti.o]
+        collapse obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtbegin.o] ==> [/home/yerson/pspdev/lib/gcc/psp/15.2.0/crtbegin.o]
+        collapse obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtend.o] ==> [/home/yerson/pspdev/lib/gcc/psp/15.2.0/crtend.o]
+        collapse obj [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/crtn.o] ==> [/home/yerson/pspdev/lib/gcc/psp/15.2.0/crtn.o]
+        collapse library dir [/home/yerson/pspdev/lib] ==> [/home/yerson/pspdev/lib]
+        collapse library dir [/home/yerson/pspdev/psp/lib] ==> [/home/yerson/pspdev/psp/lib]
+        collapse library dir [/home/yerson/pspdev/psp/sdk/lib] ==> [/home/yerson/pspdev/psp/sdk/lib]
+        collapse library dir [/home/yerson/pspdev/lib] ==> [/home/yerson/pspdev/lib]
+        collapse library dir [/home/yerson/pspdev/psp/lib] ==> [/home/yerson/pspdev/psp/lib]
+        collapse library dir [/home/yerson/pspdev/psp/sdk/lib] ==> [/home/yerson/pspdev/psp/sdk/lib]
+        collapse library dir [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0] ==> [/home/yerson/pspdev/lib/gcc/psp/15.2.0]
+        collapse library dir [/home/yerson/pspdev/bin/../lib/gcc] ==> [/home/yerson/pspdev/lib/gcc]
+        collapse library dir [/home/yerson/pspdev/bin/../lib/gcc/psp/15.2.0/../../../../psp/lib] ==> [/home/yerson/pspdev/psp/lib]
+        collapse library dir [/home/yerson/pspdev/bin/../psp/lib] ==> [/home/yerson/pspdev/psp/lib]
+        implicit libs: [stdc++;m;gcc;m;pthreadglue;pthread;cglue;c;psputility;psprtc;pspnet_inet;pspnet_resolver;pspsdk;pspmodinfo;pspuser;gcc]
+        implicit objs: [/home/yerson/pspdev/psp/lib/crt0.o;/home/yerson/pspdev/lib/gcc/psp/15.2.0/crti.o;/home/yerson/pspdev/lib/gcc/psp/15.2.0/crtbegin.o;/home/yerson/pspdev/lib/gcc/psp/15.2.0/crtend.o;/home/yerson/pspdev/lib/gcc/psp/15.2.0/crtn.o]
+        implicit dirs: [/home/yerson/pspdev/lib;/home/yerson/pspdev/psp/lib;/home/yerson/pspdev/psp/sdk/lib;/home/yerson/pspdev/lib/gcc/psp/15.2.0;/home/yerson/pspdev/lib/gcc]
+        implicit fwks: []
+      
+      
+...
