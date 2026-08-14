@@ -17,13 +17,20 @@ void Player::Update(SceCtrlData& pad, PlayerVariables& playerVars)
 {
     sceCtrlReadBufferPositive(&pad, 1);
 
-    if (pad.Buttons != 0)
+
+    if (pad.Buttons & PSP_CTRL_RIGHT)
     {
-        if (pad.Buttons & PSP_CTRL_RIGHT)
-        {
-            x += playerVars.spd*GetFrameTime();
-        }
+        playerVars.hmove = 1;
     }
+    else if (pad.Buttons & PSP_CTRL_LEFT)
+    {
+        playerVars.hmove = -1;
+    }
+    else
+    {
+        playerVars.hmove = 0;
+    }
+    x += (playerVars.hmove*playerVars.spd)*GetFrameTime();
 }
 void Player::Draw()
 {
