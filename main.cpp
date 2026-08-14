@@ -15,7 +15,7 @@ PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER);
 int main(void)
 {
     InitWindow(480,272,"Hola");
-    SetTargetFPS(60);
+    SetTargetFPS(30);
 
     SceCtrlData pad;
     sceCtrlSetSamplingCycle(0);
@@ -26,14 +26,16 @@ int main(void)
     PlayerVariables playerVars;
     playerVars.hmove = 0.0f;
     playerVars.vmove = 0.0f;
-    playerVars.spd = 5.0f*60;
+    playerVars.spd = 10.0f*30;
+    playerVars.grav = 1.0f*30;
 
     while (!WindowShouldClose())
     {
         player.Update(pad,playerVars);
         BeginDrawing();
-            ClearBackground(BLACK);
-            DrawText("Hola",0,0,16,WHITE);
+            ClearBackground(WHITE);
+            DrawText(TextFormat("Hola: %s",RAYLIB_VERSION),0,0,16,BLACK);
+            DrawFPS(0,16);
             player.Draw();
         EndDrawing();
     }

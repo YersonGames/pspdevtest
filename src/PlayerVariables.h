@@ -5,4 +5,5 @@ struct PlayerVariables
     float hmove;
     float vmove;
     float spd;
+    float grav;
 };

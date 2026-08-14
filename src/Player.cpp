@@ -31,6 +31,9 @@ void Player::Update(SceCtrlData& pad, PlayerVariables& playerVars)
         playerVars.hmove = 0;
     }
     x += (playerVars.hmove*playerVars.spd)*GetFrameTime();
+    
+    playerVars.vmove += playerVars.grav*GetFrameTime();
+    y += playerVars.vmove;
 }
 void Player::Draw()
 {
