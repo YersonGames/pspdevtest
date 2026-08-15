@@ -9,6 +9,7 @@
 #include "PlayerVariables.h"
 #include "CollisionBlock.h"
 #include "utils.h"
+#include "Hitbox.h"
 
 PSP_MODULE_INFO("test", 0, 1, 0);
 PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER);
@@ -34,6 +35,13 @@ int main(void)
     //Collision Blocks
     std::vector<CollisionBlock> collisionBlocks;
     collisionBlocks.push_back(CollisionBlock(0,272-48,480,32));
+    collisionBlocks.push_back(CollisionBlock(240,272-48-32,240,32));
+    collisionBlocks.push_back(CollisionBlock(240+128,272-48-128,240,128));
+
+    //Hitbox test
+    std::vector<Hitbox> hitboxes;
+    hitboxes.push_back(Hitbox(128,64,64,64,10.0f));
+    hitboxes.push_back(Hitbox(128+64,64,64,64,20.0f));
 
     while (!WindowShouldClose())
     {
@@ -48,6 +56,20 @@ int main(void)
             collisionBlock->Update();
         }
 
+        //Hitbox Update
+        for (auto hitbox = hitboxes.begin(); hitbox != hitboxes.end();)
+        {
+            if (hitbox->GetDestroy() == true)
+            {
+                hitboxes.erase(hitbox);
+            }
+            else
+            {
+                hitbox->Update();
+                hitbox++;
+            }
+        }
+
         BeginDrawing();
             ClearBackground(WHITE);
             DrawText(TextFormat("Hola: %s",RAYLIB_VERSION),0,0,16,BLACK);
@@ -60,6 +82,12 @@ int main(void)
             for (auto collisionBlock = collisionBlocks.begin(); collisionBlock != collisionBlocks.end(); collisionBlock++)
             {
                 collisionBlock->Draw();
+            }
+
+            //Hitbox Draw
+            for (auto hitbox = hitboxes.begin(); hitbox != hitboxes.end(); hitbox++)
+            {
+                hitbox->Draw();
             }
 
         EndDrawing();

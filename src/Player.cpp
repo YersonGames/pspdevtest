@@ -33,15 +33,13 @@ void Player::Update(SceCtrlData& pad, SceCtrlData& padOld, PlayerVariables& play
     {
         playerVars.hmove = 0;
     }
-
-    x += (playerVars.hmove*playerVars.spd)*GetFrameTime();
     
     //Jump
     if ( (pad.Buttons & PSP_CTRL_CROSS) && !(padOld.Buttons & PSP_CTRL_CROSS) ) 
     {
         jumpKey = true;
     }
-    if (jumpKey == true && jump == true)
+    if (jumpKey == true && jump == true && (pad.Buttons & PSP_CTRL_CROSS))
     {
         playerVars.vmove = (-15.0f*30)*GetFrameTime();
         jumpKey = false;
@@ -56,7 +54,7 @@ void Player::Update(SceCtrlData& pad, SceCtrlData& padOld, PlayerVariables& play
     //Collision with CollisionBlock
     for (auto collisionBlock = collisionBlocks.begin(); collisionBlock != collisionBlocks.end(); collisionBlock++)
         {
-            //Detect collision Vertical
+            //Detect Vertical collision
             if (utils::getCollision(x,y+playerVars.vmove,width,height,*collisionBlock))
             {
                 if (playerVars.vmove > 0)
@@ -70,14 +68,26 @@ void Player::Update(SceCtrlData& pad, SceCtrlData& padOld, PlayerVariables& play
                 playerVars.vmove = 0;
             }
 
-            //Detect floor y+1: Jump
-            if (utils::getCollision(x,y+1,width,height,*collisionBlock))
+            //Detect Horizontal collision 
+            if (utils::getCollision(x+(playerVars.hmove*playerVars.spd)*GetFrameTime(),y,width,height,*collisionBlock))
             {
-                jump = true;
+                if (playerVars.hmove > 0)
+                {
+                    x = collisionBlock->GetX()-width;
+                }
+                else if (playerVars.hmove < 0)
+                {
+                    x = collisionBlock->GetX()-collisionBlock->GetWidth();
+                }
+                playerVars.hmove = 0;
             }
-            else {jump = false;}
         }
 
+    //detect jump
+    if (playerVars.vmove == 0){jump = true;}
+    else {jump = false;}
+
+    x += (playerVars.hmove*playerVars.spd)*GetFrameTime();
     y += playerVars.vmove;
 
     padOld = pad;
