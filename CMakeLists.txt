@@ -11,7 +11,8 @@ target_sources(${PROJECT_NAME} PRIVATE
     main.cpp
     src/Player.cpp
     src/CollisionBlock.cpp
-    src/Hitbox.cpp)
+    src/Hitbox.cpp
+    src/Hurtbox.cpp)
 
 target_include_directories(${PROJECT_NAME} PRIVATE src/)
 

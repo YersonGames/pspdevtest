@@ -10,6 +10,7 @@
 #include "CollisionBlock.h"
 #include "utils.h"
 #include "Hitbox.h"
+#include "Hurtbox.h"
 
 PSP_MODULE_INFO("test", 0, 1, 0);
 PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER);
@@ -43,6 +44,10 @@ int main(void)
     hitboxes.push_back(Hitbox(128,64,64,64,10.0f));
     hitboxes.push_back(Hitbox(128+64,64,64,64,20.0f));
 
+    //Hurtbox test
+    std::vector<Hurtbox> hurtboxes;
+    hurtboxes.push_back(Hurtbox(240+32,272-128,32,32));
+
     while (!WindowShouldClose())
     {
         sceCtrlReadBufferPositive(&pad, 1);
@@ -70,6 +75,12 @@ int main(void)
             }
         }
 
+        //Hurtbox Update test
+        for (auto hurtbox = hurtboxes.begin(); hurtbox != hurtboxes.end(); hurtbox++)
+        {
+            hurtbox->Update(hitboxes);
+        }
+
         BeginDrawing();
             ClearBackground(WHITE);
             DrawText(TextFormat("Hola: %s",RAYLIB_VERSION),0,0,16,BLACK);
@@ -88,6 +99,12 @@ int main(void)
             for (auto hitbox = hitboxes.begin(); hitbox != hitboxes.end(); hitbox++)
             {
                 hitbox->Draw();
+            }
+
+            //Hurtbox Draw
+            for (auto hurtbox = hurtboxes.begin(); hurtbox != hurtboxes.end(); hurtbox++)
+            {
+                hurtbox->Draw();
             }
 
         EndDrawing();
