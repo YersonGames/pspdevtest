@@ -48,7 +48,7 @@ int main(void)
         sceCtrlReadBufferPositive(&pad, 1);
 
         //Player Update
-        player.Update(pad,padOld,playerVars,collisionBlocks);
+        player.Update(pad,padOld,playerVars,collisionBlocks,hitboxes);
 
         //CollisionBlock Update
         for (auto collisionBlock = collisionBlocks.begin(); collisionBlock != collisionBlocks.end(); collisionBlock++)

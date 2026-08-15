@@ -7,6 +7,7 @@
 #include "PlayerVariables.h"
 #include "utils.h"
 #include "CollisionBlock.h"
+#include "Hitbox.h"
 
 
 Player::Player(float get_x, float get_y, float get_w, float get_h)
@@ -17,17 +18,20 @@ Player::Player(float get_x, float get_y, float get_w, float get_h)
     height = get_h;
     jump = false;
     jumpKey = false;
+    int8_t hDir = 1;
 }
 
-void Player::Update(SceCtrlData& pad, SceCtrlData& padOld, PlayerVariables& playerVars, std::vector<CollisionBlock>& collisionBlocks)
+void Player::Update(SceCtrlData& pad, SceCtrlData& padOld, PlayerVariables& playerVars, std::vector<CollisionBlock>& collisionBlocks, std::vector<Hitbox>& hitboxes)
 {
     if (pad.Buttons & PSP_CTRL_RIGHT)
     {
         playerVars.hmove = 1;
+        hDir = 1;
     }
     else if (pad.Buttons & PSP_CTRL_LEFT)
     {
         playerVars.hmove = -1;
+        hDir = -1;
     }
     else
     {
@@ -89,6 +93,12 @@ void Player::Update(SceCtrlData& pad, SceCtrlData& padOld, PlayerVariables& play
 
     x += (playerVars.hmove*playerVars.spd)*GetFrameTime();
     y += playerVars.vmove;
+
+    //Create Hitbox test
+    if ( (pad.Buttons & PSP_CTRL_CIRCLE) && !(padOld.Buttons & PSP_CTRL_CIRCLE) ) 
+    {
+        hitboxes.push_back(Hitbox(x+(32*hDir),y+8,32,16,2));
+    }
 
     padOld = pad;
 }
