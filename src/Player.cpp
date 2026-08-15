@@ -16,6 +16,7 @@ Player::Player(float get_x, float get_y, float get_w, float get_h)
     width = get_w;
     height = get_h;
     jump = false;
+    jumpKey = false;
 }
 
 void Player::Update(SceCtrlData& pad, SceCtrlData& padOld, PlayerVariables& playerVars, std::vector<CollisionBlock>& collisionBlocks)
@@ -35,12 +36,22 @@ void Player::Update(SceCtrlData& pad, SceCtrlData& padOld, PlayerVariables& play
 
     x += (playerVars.hmove*playerVars.spd)*GetFrameTime();
     
+    //Jump
+    if ( (pad.Buttons & PSP_CTRL_CROSS) && !(padOld.Buttons & PSP_CTRL_CROSS) ) 
+    {
+        jumpKey = true;
+    }
+    if (jumpKey == true && jump == true)
+    {
+        playerVars.vmove = (-15.0f*30)*GetFrameTime();
+        jumpKey = false;
+    }
+
     //Gravity
     playerVars.vmove += playerVars.grav*GetFrameTime();
 
     //velocity limit gravity
     if (playerVars.vmove > (20.0f*30)*GetFrameTime() ) {playerVars.vmove = (20.0f*30)*GetFrameTime();}
-    jump = false;
 
     //Collision with CollisionBlock
     for (auto collisionBlock = collisionBlocks.begin(); collisionBlock != collisionBlocks.end(); collisionBlock++)
@@ -66,12 +77,6 @@ void Player::Update(SceCtrlData& pad, SceCtrlData& padOld, PlayerVariables& play
             }
             else {jump = false;}
         }
-
-    //Jump
-    if ( (pad.Buttons & PSP_CTRL_CROSS) && !(padOld.Buttons & PSP_CTRL_CROSS) && jump == true ) 
-    {
-        playerVars.vmove = (-15.0f*30)*GetFrameTime();
-    }
 
     y += playerVars.vmove;
 
