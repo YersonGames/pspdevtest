@@ -15,6 +15,7 @@ class Player
         float y;
         float width;
         float height;
+        
         bool jump;
         bool jumpKey;
         int8_t hDir;
