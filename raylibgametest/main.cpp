@@ -40,7 +40,6 @@ int main(int argc, char *argv[])
 
     MIX_Mixer* gMixer = MIX_CreateMixerDevice(SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK, nullptr);
     MIX_Track* gSoundTrack = MIX_CreateTrack(gMixer);
-
     MIX_Audio* FxHit = MIX_LoadAudio(gMixer,"assets/maincrahit.wav",true);
 
     MIX_SetTrackAudio(gSoundTrack,FxHit);

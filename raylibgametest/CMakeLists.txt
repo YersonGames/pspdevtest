@@ -23,22 +23,8 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     raylib
     SDL3::SDL3
     SDL3_mixer::SDL3_mixer
-    pspdebug
-    pspdisplay
-    pspge
-    pspctrl
-    pspaudio
-    pspaudiolib
-    psputility
-    GL
-    png
-    z
-    glut
-    GLU
-    pspvram
-    pspvfpu
-    m
-    c
+    -lGL -lGLU -lglut -lz -lpspvfpu -lpsphprm -lpspsdk -lpspctrl -lpspumd -lpsprtc -lpsppower -lpspgum -lpspgu -lpspaudiolib -lpspaudio -lpsphttp -lpspssl -lpspwlan
+    -lpspnet_adhocmatching -lpspnet_adhoc -lpspnet_adhocctl -lm -lpspvram
 )
 
 # Create an EBOOT.PBP file
