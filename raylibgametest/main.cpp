@@ -2,8 +2,12 @@
 #include <pspdisplay.h>
 #include <pspdebug.h>
 #include <pspctrl.h>
+#include <pspaudio.h>
+#include <pspaudiolib.h>
+#include <pspuser.h>
 #include <raylib.h>
 #include <vector>
+
 
 #include "Player.h"
 #include "PlayerVariables.h"
@@ -13,9 +17,9 @@
 #include "Hurtbox.h"
 
 PSP_MODULE_INFO("test", 0, 1, 0);
-PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER);
+PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER | THREAD_ATTR_VFPU);
 
-int main(void)
+int main()
 {
     InitWindow(480,272,"Hola");
     SetTargetFPS(30);
@@ -109,7 +113,6 @@ int main(void)
 
         EndDrawing();
     }
-
     CloseWindow();
     return 0;
 }
