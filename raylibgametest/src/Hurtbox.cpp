@@ -1,4 +1,6 @@
 #include <raylib.h>
+#include <SDL3/SDL.h>
+#include <SDL3_mixer/SDL_mixer.h>
 
 #include "Hurtbox.h"
 #include "utils.h"
@@ -15,7 +17,7 @@ Hurtbox::Hurtbox(float get_x, float get_y, float get_w, float get_h)
 
     hurt = false;
 }
-void Hurtbox::Update(std::vector<Hitbox>& hitboxes)
+void Hurtbox::Update(std::vector<Hitbox>& hitboxes, MIX_Track* gSoundTrack, MIX_Audio* FxHit)
 {
 
     if (hurt == true)
@@ -38,6 +40,8 @@ void Hurtbox::Update(std::vector<Hitbox>& hitboxes)
         {
             hurt = true;
             hurtTimer = 10;
+            MIX_SetTrackAudio(gSoundTrack,FxHit);
+            MIX_PlayTrack(gSoundTrack,0);
         }
     }
 }

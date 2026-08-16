@@ -1,6 +1,8 @@
 #pragma once
 #include <raylib.h>
 #include <vector>
+#include <SDL3/SDL.h>
+#include <SDL3_mixer/SDL_mixer.h>
 
 class Hitbox;
 
@@ -17,7 +19,7 @@ class Hurtbox
         bool hurt;
 
     Hurtbox(float get_x, float get_y, float get_w, float get_h);
-    void Update(std::vector<Hitbox>& hitboxes);
+    void Update(std::vector<Hitbox>& hitboxes,MIX_Track* gSoundTrack, MIX_Audio* FxHit);
     void Draw();
 
     //Getters

@@ -8,7 +8,6 @@
 #include <raylib.h>
 #include <vector>
 #include <SDL3/SDL.h>
-#include <SDL3/SDL_main.h>
 #include <SDL3_mixer/SDL_mixer.h>
 
 
@@ -19,8 +18,8 @@
 #include "Hitbox.h"
 #include "Hurtbox.h"
 
-//PSP_MODULE_INFO("test", 0, 1, 0);
-//PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER | THREAD_ATTR_VFPU);
+PSP_MODULE_INFO("test", 0, 1, 0);
+PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER | THREAD_ATTR_VFPU);
 
 int main(int argc, char *argv[])
 {
@@ -39,20 +38,13 @@ int main(int argc, char *argv[])
         return 2;
     }
 
-    MIX_Mixer* mixer = MIX_CreateMixerDevice(SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK, nullptr);
-    MIX_Track* sound_track = MIX_CreateTrack(mixer);
+    MIX_Mixer* gMixer = MIX_CreateMixerDevice(SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK, nullptr);
+    MIX_Track* gSoundTrack = MIX_CreateTrack(gMixer);
 
-    MIX_Audio* FxHit = MIX_LoadAudio(mixer,"assets/maincrahit.wav",true);
-    if (!FxHit) {
-        SDL_Log("Couldn't load audio file: %s", SDL_GetError());
-        MIX_DestroyMixer(mixer);
-        MIX_Quit();
-        SDL_Quit();
-        return 5;
-    }
+    MIX_Audio* FxHit = MIX_LoadAudio(gMixer,"assets/maincrahit.wav",true);
 
-    MIX_SetTrackAudio(sound_track,FxHit);
-    MIX_SetTrackGain(sound_track, 1.0f);
+    MIX_SetTrackAudio(gSoundTrack,FxHit);
+    MIX_SetTrackGain(gSoundTrack, 1.0f);
 
 
     InitWindow(480,272,"Hola");
@@ -86,8 +78,6 @@ int main(int argc, char *argv[])
     std::vector<Hurtbox> hurtboxes;
     hurtboxes.push_back(Hurtbox(240+32,272-128,32,32));
 
-    MIX_PlayAudio(mixer,FxHit);
-
     while (!WindowShouldClose())
     {
         sceCtrlReadBufferPositive(&pad, 1);
@@ -118,7 +108,7 @@ int main(int argc, char *argv[])
         //Hurtbox Update test
         for (auto hurtbox = hurtboxes.begin(); hurtbox != hurtboxes.end(); hurtbox++)
         {
-            hurtbox->Update(hitboxes);
+            hurtbox->Update(hitboxes,gSoundTrack,FxHit);
         }
 
         BeginDrawing();
