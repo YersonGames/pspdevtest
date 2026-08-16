@@ -12,7 +12,7 @@ target_sources(${PROJECT_NAME} PRIVATE
 
 target_include_directories(${PROJECT_NAME} PRIVATE src/)
 
-find_package(SDL3 REQUIRED)
+find_package(SDL3 REQUIRED CONFIG REQUIRED COMPONENTS SDL3)
 find_package(SDL3_mixer REQUIRED)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
