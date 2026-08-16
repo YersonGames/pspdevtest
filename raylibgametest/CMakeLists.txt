@@ -16,8 +16,13 @@ target_sources(${PROJECT_NAME} PRIVATE
 
 target_include_directories(${PROJECT_NAME} PRIVATE src/)
 
+find_package(SDL3 REQUIRED)
+find_package(SDL3_mixer REQUIRED)
+
 target_link_libraries(${PROJECT_NAME} PRIVATE
     raylib
+    SDL3::SDL3
+    SDL3_mixer::SDL3_mixer
     pspdebug
     pspdisplay
     pspge
@@ -30,7 +35,10 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     z
     glut
     GLU
+    pspvram
     pspvfpu
+    m
+    c
 )
 
 # Create an EBOOT.PBP file

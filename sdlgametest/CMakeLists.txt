@@ -10,21 +10,23 @@ add_executable(${PROJECT_NAME})
 target_sources(${PROJECT_NAME} PRIVATE
     main.cpp)
 
-target_include_directories(${PROJECT_NAME} PRIVATE src/)
-
-find_package(SDL3 REQUIRED CONFIG REQUIRED COMPONENTS SDL3)
-find_package(SDL3_mixer REQUIRED)
+find_package(SDL3 REQUIRED)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
     SDL3::SDL3
-    SDL3_mixer::SDL3_mixer
     pspdebug
     pspdisplay
     pspge
+    pspgu
     pspctrl
     pspaudio
     pspaudiolib
     psputility
+    GL
+    pspvram
+    pspvfpu
+    m
+    c
 )
 
 # Create an EBOOT.PBP file

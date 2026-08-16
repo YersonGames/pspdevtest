@@ -1,3 +1,5 @@
+#include <SDL3/SDL.h>
+#include <SDL3/SDL_main.h>
 #include <pspkernel.h>
 #include <pspdisplay.h>
 #include <pspdebug.h>
@@ -5,15 +7,13 @@
 #include <pspaudio.h>
 #include <pspaudiolib.h>
 #include <pspuser.h>
-#include <SDL3/SDL.h>
-#include <SDL3/SDL_main.h>
-//#include <SDL3_mixer/SDL_mixer.h>
 #include <string>
 
 int main(int argc, char *argv[])
 {
     (void)argc;
     (void)argv;
+
 
     SDL_Window* gWindow = nullptr;
     SDL_Renderer* gRender = nullptr;
@@ -35,10 +35,10 @@ int main(int argc, char *argv[])
 
     SDL_FRect square = {216, 96, 34, 64}; 
     bool exitWindow = false;
+    SDL_Event event;
 
     while (exitWindow == false)
     {
-        SDL_Event event;
 
         while (SDL_PollEvent(&event))
         {
@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
                 exitWindow = true;
             }
         }
-
+        SDL_RenderClear(gRender);
         SDL_SetRenderDrawColor(gRender,255,255,255,255);
         SDL_RenderFillRect(gRender,&square);
         SDL_RenderPresent(gRender);
