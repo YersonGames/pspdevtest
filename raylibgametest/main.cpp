@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
     //Crear Mixer device
     MIX_Mixer* gMixer = MIX_CreateMixerDevice(SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK, nullptr);
 
-    //Cerar track
+    //Crear track
     MIX_Track* gSoundTrack = MIX_CreateTrack(gMixer);
 
     //Investigar como meter esta wea en allgun lado para llamarlo directamento, un array, lista, vector o la wea que sea
@@ -77,8 +77,6 @@ int main(int argc, char *argv[])
 
     //Hitbox test
     std::vector<Hitbox> hitboxes;
-    hitboxes.push_back(Hitbox(128,64,64,64,10.0f));
-    hitboxes.push_back(Hitbox(128+64,64,64,64,20.0f));
 
     //Hurtbox test
     std::vector<Hurtbox> hurtboxes;
@@ -145,6 +143,11 @@ int main(int argc, char *argv[])
 
         EndDrawing();
     }
+	
+	collisionBlocks.clear();
+	hitboxes.clear();
+	hurtboxes.clear();
+
     MIX_Quit();
     CloseWindow();
     return 0;

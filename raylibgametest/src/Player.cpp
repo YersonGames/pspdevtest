@@ -16,9 +16,10 @@ Player::Player(float get_x, float get_y, float get_w, float get_h)
     y = get_y;
     width = get_w;
     height = get_h;
+	
     jump = false;
     jumpKey = false;
-    int8_t hDir = 1;
+    hDir = 1;
 }
 
 void Player::Update(SceCtrlData& pad, SceCtrlData& padOld, PlayerVariables& playerVars, std::vector<CollisionBlock>& collisionBlocks, std::vector<Hitbox>& hitboxes)
