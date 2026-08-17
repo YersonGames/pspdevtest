@@ -6,7 +6,7 @@
 #include "utils.h"
 #include "Hitbox.h"
 
-Hurtbox::Hurtbox(float get_x, float get_y, float get_w, float get_h)
+Hurtbox::Hurtbox(float get_x, float get_y, float get_w, float get_h,float get_hurtTimerDefault)
 {
     x = get_x;
     y = get_y;
@@ -14,6 +14,7 @@ Hurtbox::Hurtbox(float get_x, float get_y, float get_w, float get_h)
     height = get_h;
     hurtTimer = 0.0f;
     hurtColor = {0,255,0,255};
+	hurtTimerDefault = get_hurtTimerDefault;
 
     hurt = false;
 }
@@ -39,7 +40,7 @@ void Hurtbox::Update(std::vector<Hitbox>& hitboxes, MIX_Track* gSoundTrack, MIX_
         if (utils::getCollision(x,y,width,height,*hitbox) && hurt == false)
         {
             hurt = true;
-            hurtTimer = 10;
+            hurtTimer = hurtTimerDefault;
             MIX_SetTrackAudio(gSoundTrack,FxHit);
             MIX_PlayTrack(gSoundTrack,0);
         }

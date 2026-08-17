@@ -17,6 +17,7 @@
 #include "utils.h"
 #include "Hitbox.h"
 #include "Hurtbox.h"
+#include "Enemy.h"
 
 PSP_MODULE_INFO("test", 0, 1, 0);
 PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER | THREAD_ATTR_VFPU);
@@ -29,14 +30,12 @@ int main(int argc, char *argv[])
     //Iniciar SDL,  audi
     if(SDL_Init(SDL_INIT_AUDIO) == false) 
     {
-        SDL_Log("Couldn't initialize SDL: %s", SDL_GetError());
         return 1;
     }
 
     //Iniciar Mixer
-    if(MIX_Init() == false) {
-        SDL_Log("Couldn't initialize SDL mixer: %s", SDL_GetError());
-        SDL_Quit();
+    if(MIX_Init() == false)
+	{
         return 2;
     }
 
@@ -71,6 +70,7 @@ int main(int argc, char *argv[])
 
     //Collision Blocks
     std::vector<CollisionBlock> collisionBlocks;
+	
     collisionBlocks.push_back(CollisionBlock(0,272-48,480,32));
     collisionBlocks.push_back(CollisionBlock(240,272-48-32,240,32));
     collisionBlocks.push_back(CollisionBlock(240+128,272-48-128,240,128));
@@ -80,7 +80,13 @@ int main(int argc, char *argv[])
 
     //Hurtbox test
     std::vector<Hurtbox> hurtboxes;
-    hurtboxes.push_back(Hurtbox(240+32,272-128,32,32));
+	
+    hurtboxes.push_back(Hurtbox(240+32,272-128,32,32,2.0f));
+	
+	//Enemy
+	std::vector<Enemy> enemies;
+	
+	enemies.push_back(Enemy(240+32,272-128,32,32));
 
     while (!WindowShouldClose())
     {
@@ -139,6 +145,12 @@ int main(int argc, char *argv[])
             for (auto hurtbox = hurtboxes.begin(); hurtbox != hurtboxes.end(); hurtbox++)
             {
                 hurtbox->Draw();
+            }
+			
+			//Enemy Draw
+            for (auto enemy = enemies.begin(); enemy != enemies.end(); enemy++)
+            {
+                enemy->Draw();
             }
 
         EndDrawing();

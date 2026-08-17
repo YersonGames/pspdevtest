@@ -15,10 +15,11 @@ class Hurtbox
         float height;
         float hurtTimer;
         Color hurtColor;
+		float hurtTimerDefault;
 
         bool hurt;
 
-    Hurtbox(float get_x, float get_y, float get_w, float get_h);
+    Hurtbox(float get_x, float get_y, float get_w, float get_h, float get_hurtTimerDefault);
     void Update(std::vector<Hitbox>& hitboxes,MIX_Track* gSoundTrack, MIX_Audio* FxHit);
     void Draw();
 
