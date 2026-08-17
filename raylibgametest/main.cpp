@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
     //Investigar como meter esta wea en allgun lado para llamarlo directamento, un array, lista, vector o la wea que sea
     MIX_Audio* FxHit = MIX_LoadAudio(gMixer,"assets/maincrahit.wav",true);
 
-    MIX_SetTrackAudio(gSoundTrack,FxHit);
+    //Setear ganancia, eso
     MIX_SetTrackGain(gSoundTrack, 1.0f);
 
 
