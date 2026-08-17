@@ -26,20 +26,27 @@ int main(int argc, char *argv[])
     (void)argc;
     (void)argv;
 
+    //Iniciar SDL,  audi
     if(SDL_Init(SDL_INIT_AUDIO) == false) 
     {
         SDL_Log("Couldn't initialize SDL: %s", SDL_GetError());
         return 1;
     }
 
+    //Iniciar Mixer
     if(MIX_Init() == false) {
         SDL_Log("Couldn't initialize SDL mixer: %s", SDL_GetError());
         SDL_Quit();
         return 2;
     }
 
+    //Crear Mixer device
     MIX_Mixer* gMixer = MIX_CreateMixerDevice(SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK, nullptr);
+
+    //Cerar track
     MIX_Track* gSoundTrack = MIX_CreateTrack(gMixer);
+
+    //Investigar como meter esta wea en allgun lado para llamarlo directamento, un array, lista, vector o la wea que sea
     MIX_Audio* FxHit = MIX_LoadAudio(gMixer,"assets/maincrahit.wav",true);
 
     MIX_SetTrackAudio(gSoundTrack,FxHit);
