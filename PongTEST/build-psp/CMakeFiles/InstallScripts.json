@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/yerson/repos/pspdevtest/PongTEST/build-psp/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

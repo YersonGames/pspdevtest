@@ -81,12 +81,12 @@ int main(int argc, char *argv[])
     //Hurtbox test
     std::vector<Hurtbox> hurtboxes;
 	
-    hurtboxes.push_back(Hurtbox(240+32,272-128,32,32,2.0f));
+    //hurtboxes.push_back(Hurtbox(240+32,272-128,32,32,2.0f));
 	
 	//Enemy
 	std::vector<Enemy> enemies;
 	
-	enemies.push_back(Enemy(240+32,272-128,32,32));
+	enemies.push_back(Enemy(240+32,272-128,32,32,{0.0f,0.0f,32.0f,32.0f}));
 
     while (!WindowShouldClose())
     {
