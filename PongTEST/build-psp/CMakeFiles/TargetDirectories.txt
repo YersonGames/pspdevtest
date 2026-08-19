@@ -1,3 +1,0 @@
-/home/yerson/repos/pspdevtest/PongTEST/build-psp/CMakeFiles/raylibGameTest.dir
-/home/yerson/repos/pspdevtest/PongTEST/build-psp/CMakeFiles/edit_cache.dir
-/home/yerson/repos/pspdevtest/PongTEST/build-psp/CMakeFiles/rebuild_cache.dir
