@@ -28,11 +28,17 @@ void Player::Draw(SDL_Renderer* gRender)
     SDL_RenderFillRect(gRender,&square);
 }
 
+//Getters
+float Player::GetX() {return square.x;}
+float Player::GetY() {return square.y;}
+float Player::GetW() {return square.w;}
+float Player::GetH() {return square.h;}
+
 //Enemy
 
-Enemy::Enemy(SDL_FRect get_square)
+Enemy::Enemy(SDL_FRect get_square)  : Player(get_square)
 {
-	super(get_square);
+	square = get_square;
 }
 
 void Enemy::Update(SceCtrlData& pad)

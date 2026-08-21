@@ -5,6 +5,8 @@
 #include "Player.h"
 #include "Ball.h"
 
+#include "gameutils.h"
+
 int main(int argc, char* args[])
 {
 	(void)argc;
@@ -53,5 +55,8 @@ int main(int argc, char* args[])
 		
 		SDL_RenderPresent(gRender);
 	}
+	SDL_DestroyWindow(gWindow);
+	SDL_DestroyRenderer(gRender);
+	SDL_Quit();
 	return 0;
 }

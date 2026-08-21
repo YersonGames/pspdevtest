@@ -12,6 +12,12 @@ class Player
     Player(SDL_FRect get_square);
     virtual void Update(SceCtrlData& pad);
     virtual void Draw(SDL_Renderer* gRender);
+
+    //Getters
+    float GetX();
+    float GetY();
+    float GetW();
+    float GetH();
 };
 
 
