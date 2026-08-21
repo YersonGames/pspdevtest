@@ -1,13 +1,24 @@
 #pragma once
 
 #include <SDL3/SDL.h>
+#include <pspctrl.h>
 
 class Player
 {
     public:
         SDL_FRect square;
+		float spd;
 
     Player(SDL_FRect get_square);
-    void Update();
-    void Draw(SDL_Renderer* gRender);
+    virtual void Update(SceCtrlData& pad);
+    virtual void Draw(SDL_Renderer* gRender);
+};
+
+
+class Enemy : public Player
+{
+	public:
+		Enemy(SDL_FRect get_square);
+		void Update(SceCtrlData& pad) override;
+		void Draw(SDL_Renderer* gRender) override;
 };
