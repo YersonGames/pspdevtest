@@ -1,6 +1,8 @@
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
 #include <pspctrl.h>
+#include <vector>
+#include <memory>
 
 #include "Player.h"
 #include "Ball.h"
@@ -30,9 +32,11 @@ int main(int argc, char* args[])
 	
 	SDL_SetRenderVSync(gRender,1);
 
-	Player player({16,136-24,8,48});
+	std::vector<std::unique_ptr<Player>> players;
+	players.push_back(std::make_unique<Player> (Player({16,136-24,8,48})) );
+	players.push_back(std::make_unique<Enemy> (Enemy({480-16,136-24,8,48})) );
 	Ball ball({240-4,136-4,8,8});
-	Enemy enemy({480-16,136-24,9,48});
+	
 	
 	while (true)
 	{
@@ -41,14 +45,14 @@ int main(int argc, char* args[])
 		SDL_SetRenderDrawColor(gRender,0,0,0,255);
 		SDL_RenderClear(gRender);
 		
-		player.Update(pad);
-		player.Draw(gRender);
-		
-		ball.Update();
+		ball.Update(players);
 		ball.Draw(gRender);
 		
-		enemy.Update(pad);
-		enemy.Draw(gRender);
+		for (auto player = players.begin(); player != players.end(); player++)
+		{
+			 (*player)->Update(pad,ball);
+			(*player)->Draw(gRender);
+		}
 		
 		SDL_RenderLine(gRender,0,0,480,0);
 		SDL_RenderLine(gRender,0,271,480,271);

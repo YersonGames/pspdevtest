@@ -1,6 +1,7 @@
 #include <SDL3/SDL.h>
 
 #include "Player.h"
+#include "Ball.h"
 
 Player::Player(SDL_FRect get_square)
 {
@@ -8,7 +9,7 @@ Player::Player(SDL_FRect get_square)
 	spd = 5.0f;
 }
 
-void Player::Update(SceCtrlData& pad)
+void Player::Update(SceCtrlData& pad, Ball& ball)
 {
 	if (pad.Buttons & PSP_CTRL_UP)
 	{
@@ -41,9 +42,19 @@ Enemy::Enemy(SDL_FRect get_square)  : Player(get_square)
 	square = get_square;
 }
 
-void Enemy::Update(SceCtrlData& pad)
+void Enemy::Update(SceCtrlData& pad, Ball& ball)
 {
+	if (square.y+(square.h/2) > ball.GetY()+ball.GetH())
+	{
+		square.y -= 4;
+	}
+	else if (square.y+(square.h/2) < ball.GetY())
+	{
+		square.y += 4;
+	}
 	
+	if (square.y <= 0) {square.y = 0;}
+	else if (square.y+square.h >= 272) {square.y = 272-square.h;}
 }
 
 void Enemy::Draw(SDL_Renderer* gRender)
