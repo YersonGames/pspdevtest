@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "PSP",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/yerson/pspdev/psp/sdk/include/",
+                "/home/yerson/pspdev/psp/sdk/include/**",
+                "/home/yerson/pspdev/psp/include/**",
+                "/home/yerson/pspdev/psp/include/",
+                "/home/yerson/pspdev/include/**",
+                "/home/yerson/pspdev/include/"
+            ],
+            "defines": [],
+            "compilerPath": "/home/yerson/pspdev/bin/psp-g++",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+}

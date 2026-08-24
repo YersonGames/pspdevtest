@@ -11,13 +11,13 @@
 #include <SDL3_mixer/SDL_mixer.h>
 
 
-#include "Player.h"
-#include "PlayerVariables.h"
-#include "CollisionBlock.h"
-#include "utils.h"
-#include "Hitbox.h"
-#include "Hurtbox.h"
-#include "Enemy.h"
+#include "src/Player.h"
+#include "src/PlayerVariables.h"
+#include "src/CollisionBlock.h"
+#include "src/utils.h"
+#include "src/Hitbox.h"
+#include "src/Hurtbox.h"
+#include "src/Enemy.h"
 
 PSP_MODULE_INFO("test", 0, 1, 0);
 PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER | THREAD_ATTR_VFPU);
