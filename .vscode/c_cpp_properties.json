@@ -4,12 +4,12 @@
             "name": "PSP",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/home/yerson/pspdev/psp/sdk/include/",
-                "/home/yerson/pspdev/psp/sdk/include/**",
-                "/home/yerson/pspdev/psp/include/**",
-                "/home/yerson/pspdev/psp/include/",
-                "/home/yerson/pspdev/include/**",
-                "/home/yerson/pspdev/include/"
+                "~/pspdev/psp/sdk/include/",
+                "~/pspdev/psp/sdk/include/**",
+                "~/pspdev/psp/include/**",
+                "~/pspdev/psp/include/",
+                "~/pspdev/include/**",
+                "~/pspdev/include/"
             ],
             "defines": [],
             "compilerPath": "/home/yerson/pspdev/bin/psp-g++",
